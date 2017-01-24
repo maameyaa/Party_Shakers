@@ -6,5 +6,10 @@ The pictures were categorized into the following:
 * Party Utensils*
 * Party Decorations*
 * Party Costumes*
-
+The database that was created for the application includes:
+* Employees *
+* Customers *
+* Orders *
+* Odetails *
+* Parts *
 #### The pictures were all taken from random google images and will be updated or might be changed in the progress of the assignment
