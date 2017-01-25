@@ -1,21 +1,3 @@
--- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
---
--- Host: 127.0.0.1
--- Generation Time: Jan 24, 2017 at 02:36 AM
--- Server version: 10.1.16-MariaDB
--- PHP Version: 5.6.24
-
-SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
-
-
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Database: `party_shakers`
 --
@@ -81,10 +63,11 @@ CREATE TABLE `orders` (
   `ono` int(5) NOT NULL,
   `cno` int(5) NOT NULL,
   `eno` int(5) NOT NULL,
-  `received` date NOT NULL,
+  `received` enum('Yes','No') NOT NULL,
   `shipped` enum('YES','NO') NOT NULL,
   `shippingdate` date NOT NULL,
-  `receivedate` date NOT NULL
+  `receivedate` date NOT NULL,
+  `orderdate` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -98,7 +81,8 @@ CREATE TABLE `parts` (
   `pname` varchar(50) NOT NULL,
   `qoh` int(5) NOT NULL,
   `price` int(5) NOT NULL,
-  `olevel` int(5) NOT NULL
+  `olevel` int(5) NOT NULL,
+  `category` enum('Decorations','Costume','Food','Drinks') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
