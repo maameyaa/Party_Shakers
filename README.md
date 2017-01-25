@@ -6,7 +6,7 @@ The pictures were categorized into the following:
 * Party Utensils*
 * Party Decorations*
 * Party Costumes*
-The database that was created for the application includes:
+# The database that was created for the application includes:
 * Employees *
 * Customers *
 * Orders *
