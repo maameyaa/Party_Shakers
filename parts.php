@@ -24,7 +24,7 @@ class parts extends adb{
      }
 
      function getPart($filter=false){
-          $strQuery="select pname, price, category from parts";
+          $strQuery="select * from parts";
           if($filter!=false){
             $strQuery=$strQuery . " where pname like '%$filter%' or category like '%$filter%'";
           }
