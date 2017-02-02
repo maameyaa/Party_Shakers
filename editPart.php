@@ -1,3 +1,34 @@
+<?php
+
+include_once("parts.php");
+$item= new parts();
+$pno="";
+$pname="";
+$price="";
+$category="";
+$qoh="";
+$olevel="";
+
+if(isset($_REQUEST['pno'])){
+    $pno=$_REQUEST['pno'];
+    $res=$item->getParts($pno);
+    if(!$res){
+        echo "failed";
+        return;
+    }
+
+    while ($res=$item->fetch()){
+        $pno = $res['pno'];
+        $pname = $res['pname'];
+        $price = $res['price'];
+        $qoh = $res['qoh'];
+        $olevel = $res['olevel'];
+        $category = $res['category'];
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -321,33 +352,23 @@ SS
                <div class="col-md-9" id="customer-orders">
 
                     <div class="box">
-                        <form method="post" action="checkout2.html">
+                        <form method="GET" action="editPart.php">
                             <h1>Edit an Item</h1>
 
                             <div class="content">
-<?php
-    if(isset($_REQUEST['pno'])){
-        $pno=$_REQUEST['pno'];
-        $pname=$_REQUEST['pname'];
-        $price=$_REQUEST['price'];
-        $category=$_REQUEST['category'];
-        $qoh=$_REQUEST['qoh'];
-        $olevel=$_REQUEST['olevel'];
-    }
+                                <input type="hidden" class="form-control" name="pno" value=<?php echo $pno?>>
 
-
-?>
                                 <div class="row">
                                     <div class="col-sm-6">
                                         <div class="form-group">
                                             <label for="pname">Item</label>
-                                            <input type="text" class="form-control" name="pname" value=<?php echo "$pname"?>>
+                                            <input type="text" class="form-control" name="pname" value=<?php echo $pname?>>
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="form-group">
                                             <label for="qoh">Quantity</label>
-                                            <input type="number" class="form-control" name="qoh" value=<?php echo "$qoh"?>>
+                                            <input type="number" class="form-control" name="qoh" value=<?php echo $qoh?>>
                                         </div>
                                     </div>
                                 </div>
@@ -357,20 +378,20 @@ SS
                                     <div class="col-sm-3">
                                         <div class="form-group">
                                             <label for="price">Price</label>
-                                            <input type="text" class="form-control" name="price" value=<?php echo "$price"?>>
+                                            <input type="text" class="form-control" name="price" value=<?php echo $price?>>
                                         </div>
                                     </div>
                                     <div class="col-sm-3">
                                         <div class="form-group">
                                             <label for="olevel">Order level</label>
-                                            <input type="number" class="form-control" name="olevel" value=<?php echo "$olevel"?>>
+                                            <input type="number" class="form-control" name="olevel"value=<?php echo $olevel?>>
                                         </div>
                                     </div>
                                     <div class="col-sm-6 col-md-3">
                                         <div class="form-group">
                                             <label for="category">Category</label>
                                             <select class="form-control" name="category">
-                                            <option value="default"> value=<?php echo "$category"?></option>
+                                            <option value="default"></option>
                                             <option value="Decorations">Decorations</option>
                                             <option value="Costume">Costume</option>
                                             <option value="Food">Food</option>
@@ -386,13 +407,36 @@ SS
                             <div class="box-footer">
 
                                 <div class="pull-right">
-                                    <a href="partsSearch.php" class="btn btn-primary">Update</a>
+                                     <button type="submit" class="btn btn-primary" name="update">Update<i class="fa fa-chevron-right"></i>
+                                    </button>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <!-- /.box -->
+<?php
+    include_once("parts.php");
 
+    if(isset($_REQUEST['update'])){
+    $obj = new parts();
+
+    $pno=$_REQUEST['pno'];
+    $pname = $_REQUEST['pname'];
+    $qoh = $_REQUEST['qoh'];
+    $price = $_REQUEST['price'];
+    $olevel = $_REQUEST['olevel'];
+    $category = $_REQUEST['category'];
+
+    $row = $obj->editPart($pno,$pname,$qoh,$price,$olevel,$category);
+
+    if($row==false){
+        echo "Item not edited";
+    }else{
+        echo "Item edited";
+    }
+
+    }
+?>
                 </div>
 
 

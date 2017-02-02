@@ -376,7 +376,7 @@ SS
                                         <th>{$row["pname"]}</th>
                                         <td>{$row["price"]}</td>
                                         <td>{$row["category"]}</td>
-                                        <td><a href='editPart.php?pno={$row['pno']}&pname={$row['pname']}&price={$row['price']}&category={$row['category']}&qoh={$row['qoh']}&olevel={$row['olevel']}' class='btn btn-primary'>Edit item</a></td>
+                                        <td><a href='editPart.php?pno={$row['pno']}' class='btn btn-primary'>Edit item</a></td>
                                     </tr>";
                                     $row = $obj ->fetch();
 							}

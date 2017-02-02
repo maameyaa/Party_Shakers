@@ -31,9 +31,14 @@ class parts extends adb{
           return $this->query($strQuery);
      }
 
+    function getParts($pno){
+          $strQuery="select * from parts where pno = $pno";
+          return $this->query($strQuery);
+     }
+
      function editPart($pno,$pname,$qoh,$price,$olevel,$category){
           $strQuery = "update parts SET pname = '$pname',qoh = '$qoh',price = '$price',olevel = '$olevel',category = '$category' where 
-                      pno = $pno";
+                      pno = '$pno'";
           return $this->query($strQuery);
      }
 
