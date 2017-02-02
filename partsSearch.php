@@ -1,7 +1,3 @@
-<!--author: Benedicta Amo Bempah
-    id    : 53532016
-    file description: a template that was used to primarily test the employee search and all functions created. -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -230,7 +226,7 @@
             <div class="navbar-buttons">
 
                 <div class="navbar-collapse collapse right" id="basket-overview">
-                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">Items in cart</span></a>
+                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
                 </div>
                 <!--/.nav-collapse -->
 
@@ -314,7 +310,6 @@ SS
 
                     <!-- *** PAGES MENU END *** -->
 
-        <!-- Page used to test functions created under the employee class -->
 
                     <div class="banner">
                         <a href="#">
@@ -325,9 +320,9 @@ SS
 
                <div class="col-md-9" id="customer-orders">
                     <div class="box">
-                        <h1>Employees</h1>
+                        <h1>Items</h1>
 
-                        <p class="lead">All Employees in one place.</p>
+                        <p class="lead">All your Party Items in one place!</p>
 
                         <hr>
 
@@ -335,73 +330,55 @@ SS
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Address</th>
-                                        <th>Town</th>
-                                        <th>Region</th>
-                                        <th>Phone Number</th>
-                                        <th>HireDate</th>
-                                        <th>Birthdate</th>
-                                        <th>Gender</th>
-                                        <th>Email</th>
-                                        <th>Password</th>
-                                        <th>Username</th>
+                                        <th>Item</th>
+                                        <th>Price</th>
+                                        <th>Category</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
 
-                    <!-- search function is invoked from employee class -->
-
                                 <?php
 
-							include_once("Employee.php");
-
-                            $Employees = new employee();
+							include_once("parts.php");
 							
 							if (isset ($_REQUEST['text'])){
 								
 								$text = $_REQUEST['text'];
 							
-							$Employees = new employee();
+							$obj = new parts();
 							
-							$Employeesa = $Employees -> searchEmployees($text);
+							$part = $obj -> getPart($text);
 
 							}
 
 							else 
 								{
-									$Employees = new employee();
+									$obj = new parts();
 									$text="";
-									$Employeesa = $Employees -> searchEmployees($text);
+									$part = $obj -> getPart($text);
 								}
 
 							
-							if ($Employees==false){
+							if ($part==false){
 								echo "Error";
 								exit();
 							}
 							
 							else
 							{
-								$row = $Employees ->fetch();
+								$row = $obj ->fetch();
 							
 							while ($row!=false)
 							{
 								echo "
                                 <tbody>
                                     <tr>
-                                        <th>{$row["efirstname"]} {$row["elastname"]} </th>
-                                        <td>{$row["house"]}</td>
-                                        <td>{$row["town"]}</td>
-                                        <td>{$row["region"]}</td>
-                                        <td>{$row["hiredate"]}</td>
-                                        <td>{$row["birthdate"]}</td>
-                                        <td>{$row["phone"]}</td>
-                                        <td>{$row["email"]}</td>
-                                        <td>{$row["gender"]}</td>
-                                        <td>{$row["password"]}</td>
-                                        <td>{$row["eusername"]}</td>
+                                        <th>{$row["pname"]}</th>
+                                        <td>{$row["price"]}</td>
+                                        <td>{$row["category"]}</td>
+                                        <td><a href='editPart.php?pno={$row['pno']}' class='btn btn-primary'>Edit item</a></td>
                                     </tr>";
-                                    $row = $Employees ->fetch();
+                                    $row = $obj ->fetch();
 							}
 							}
 							
@@ -410,10 +387,20 @@ SS
                             </table>
                         </div>
                     </div>
+                            <div class="box-footer">
+
+                                <div class="pull-right">
+                                    <a href="addParts.php" class="btn btn-primary">Add a new item</a>
+                                </div>
+                            </div>
                 </div>
+
+
 
             </div>
             <!-- /.container -->
+
+
         </div>
         <!-- /#content -->
 

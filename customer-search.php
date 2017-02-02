@@ -288,13 +288,13 @@ SS
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
                                 <li>
-                                    <a href="customersearch.php">Customers</a>
+                                    <a href="index.php">Customers</a>
                                 </li>
                                 <li>
                                     <a href="employee-search.php">Empolyees</a>
                                 </li>
                                 <li>
-                                    <a href="index.php">Items</a>
+                                    <a href="partsSearch.php">Items</a>
                                 </li>
                                 <li>
                                     <a href="basket.php">Order</a>

@@ -1,7 +1,3 @@
-<!--author: Benedicta Amo Bempah
-    id    : 53532016
-    file description: a template that was used to primarily test the employee search and all functions created. -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -230,7 +226,7 @@
             <div class="navbar-buttons">
 
                 <div class="navbar-collapse collapse right" id="basket-overview">
-                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">Items in cart</span></a>
+                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
                 </div>
                 <!--/.nav-collapse -->
 
@@ -291,17 +287,17 @@ SS
 
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
-                               <li>
-                                    <a href="index.php">Customers</a>
+                                <li>
+                                    <a href="text.html">Customers</a>
                                 </li>
                                 <li>
-                                    <a href="employee-search.php">Empolyees</a>
+                                    <a href="text.html">Empolyees</a>
                                 </li>
                                 <li>
                                     <a href="partsSearch.php">Items</a>
                                 </li>
                                 <li>
-                                    <a href="basket.php">Order</a>
+                                    <a href="contact.html">Contact page</a>
                                 </li>
                                 <li>
                                     <a href="faq.html">FAQ</a>
@@ -314,7 +310,6 @@ SS
 
                     <!-- *** PAGES MENU END *** -->
 
-        <!-- Page used to test functions created under the employee class -->
 
                     <div class="banner">
                         <a href="#">
@@ -324,96 +319,101 @@ SS
                 </div>
 
                <div class="col-md-9" id="customer-orders">
+
                     <div class="box">
-                        <h1>Employees</h1>
+                        <form method="post" action="addParts.php">
+                            <h1>Add a New Item</h1>
 
-                        <p class="lead">All Employees in one place.</p>
+                            <div class="content">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <div class="form-group">
+                                            <label for="pname">Item</label>
+                                            <input type="text" class="form-control" name="pname">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label for="qoh">Quantity</label>
+                                            <input type="number" class="form-control" name="qoh">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row -->
 
-                        <hr>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label for="price">Price</label>
+                                            <input type="text" class="form-control" name="price">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <div class="form-group">
+                                            <label for="olevel">Order level</label>
+                                            <input type="number" class="form-control" name="olevel">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-3">
+                                        <div class="form-group">
+                                            <label for="category">Category</label>
+                                            <select class="form-control" name="category">
+                                            <option value="default">Select</option>
+                                            <option value="Decorations">Decorations</option>
+                                            <option value="Costume">Costume</option>
+                                            <option value="Food">Food</option>
+                                            <option value="Utensils">Utensils</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.row -->
 
-                        <div class="table-responsive">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Name</th>
-                                        <th>Address</th>
-                                        <th>Town</th>
-                                        <th>Region</th>
-                                        <th>Phone Number</th>
-                                        <th>HireDate</th>
-                                        <th>Birthdate</th>
-                                        <th>Gender</th>
-                                        <th>Email</th>
-                                        <th>Password</th>
-                                        <th>Username</th>
-                                    </tr>
-                                </thead>
+                            </div>
 
-                    <!-- search function is invoked from employee class -->
 
-                                <?php
 
-							include_once("Employee.php");
+                            <div class="box-footer">
 
-                            $Employees = new employee();
-							
-							if (isset ($_REQUEST['text'])){
-								
-								$text = $_REQUEST['text'];
-							
-							$Employees = new employee();
-							
-							$Employeesa = $Employees -> searchEmployees($text);
-
-							}
-
-							else 
-								{
-									$Employees = new employee();
-									$text="";
-									$Employeesa = $Employees -> searchEmployees($text);
-								}
-
-							
-							if ($Employees==false){
-								echo "Error";
-								exit();
-							}
-							
-							else
-							{
-								$row = $Employees ->fetch();
-							
-							while ($row!=false)
-							{
-								echo "
-                                <tbody>
-                                    <tr>
-                                        <th>{$row["efirstname"]} {$row["elastname"]} </th>
-                                        <td>{$row["house"]}</td>
-                                        <td>{$row["town"]}</td>
-                                        <td>{$row["region"]}</td>
-                                        <td>{$row["hiredate"]}</td>
-                                        <td>{$row["birthdate"]}</td>
-                                        <td>{$row["phone"]}</td>
-                                        <td>{$row["email"]}</td>
-                                        <td>{$row["gender"]}</td>
-                                        <td>{$row["password"]}</td>
-                                        <td>{$row["eusername"]}</td>
-                                    </tr>";
-                                    $row = $Employees ->fetch();
-							}
-							}
-							
-							?>
-                                </tbody>
-                            </table>
-                        </div>
+                                <div class="pull-right">
+                                    <button type="submit" class="btn btn-primary" onclick="partsSearch.php">Add<i class="fa fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
+                    <!-- /.box -->
+<?php
+    include_once("parts.php");
+
+    if(!empty($_REQUEST)){
+    $obj = new parts();
+
+    $pname = $_REQUEST['pname'];
+    $qoh = $_REQUEST['qoh'];
+    $price = $_REQUEST['price'];
+    $olevel = $_REQUEST['olevel'];
+    $category = $_REQUEST['category'];
+
+    $row = $obj->newPart($pname,$qoh,$price,$olevel,$category);
+
+    if($row==false){
+        echo "Item not added";
+    }else{
+        echo "Item added";
+    }
+
+    }
+?>
+
                 </div>
+
+
 
             </div>
             <!-- /.container -->
+
+
         </div>
         <!-- /#content -->
 

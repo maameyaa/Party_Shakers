@@ -24,16 +24,21 @@ class parts extends adb{
      }
 
      function getPart($filter=false){
-          $strQuery="select pno, pname, price, category from parts";
+          $strQuery="select * from parts";
           if($filter!=false){
             $strQuery=$strQuery . " where pname like '%$filter%' or category like '%$filter%'";
           }
           return $this->query($strQuery);
      }
 
+    function getParts($pno){
+          $strQuery="select * from parts where pno = $pno";
+          return $this->query($strQuery);
+     }
+
      function editPart($pno,$pname,$qoh,$price,$olevel,$category){
           $strQuery = "update parts SET pname = '$pname',qoh = '$qoh',price = '$price',olevel = '$olevel',category = '$category' where 
-                      pno = $pno";
+                      pno = '$pno'";
           return $this->query($strQuery);
      }
 

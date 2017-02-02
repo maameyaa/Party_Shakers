@@ -104,8 +104,8 @@
             <div class="navbar-header">
 
                 <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
-                    <img src="logo.png" alt="logo" class="hidden-xs">
-                    <img src="logo.png" alt="logo" class="visible-xs"><span class="sr-only">Party Shakers - go to homepage</span>
+                    <img src="" alt="logo" class="hidden-xs">
+                    <img src="" alt="logo" class="visible-xs"><span class="sr-only">Party Shakers - go to homepage</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
@@ -270,7 +270,7 @@
 
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="index.php">Items</a>
+                        <li><a href="partsSearch.php">Items</a>
                         </li>
                         <li>Shopping cart</li>
                     </ul>

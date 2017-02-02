@@ -288,13 +288,13 @@ SS
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
                                 <li>
-                                    <a href="customer-search.php">Customers</a>
+                                    <a href="index.php">Customers</a>
                                 </li>
                                 <li>
                                     <a href="employee-search.php">Empolyees</a>
                                 </li>
                                 <li>
-                                    <a href="index.php">Items</a>
+                                    <a href="partsSearch.php">Items</a>
                                 </li>
                                 <li>
                                     <a href="basket.php">Order</a>
@@ -302,6 +302,7 @@ SS
                                 <li>
                                     <a href="faq.html">FAQ</a>
                                 </li>
+                                <li>
 
                             </ul>
 
@@ -320,9 +321,9 @@ SS
 
                <div class="col-md-9" id="customer-orders">
                     <div class="box">
-                        <h1>Items</h1>
+                        <h1>Customers</h1>
 
-                        <p class="lead">All your Party Items in one place!</p>
+                        <p class="lead">All Customers in one place.</p>
 
                         <hr>
 
@@ -330,53 +331,59 @@ SS
                             <table class="table table-hover">
                                 <thead>
                                     <tr>
-                                        <th>Item</th>
-                                        <th>Price</th>
-                                        <th>Category</th>
+                                        <th>Name</th>
+                                        <th>Address</th>
+                                        <th>Town</th>
+                                        <th>Region</th>
+                                        <th>Phone Number</th>
+                                        <th>Email</th>
                                     </tr>
                                 </thead>
 
                                 <?php
 
-							include_once("parts.php");
+							include_once("Customer.php");
 							
 							if (isset ($_REQUEST['text'])){
 								
 								$text = $_REQUEST['text'];
 							
-							$obj = new parts();
+							$customer = new Customer();
 							
-							$part = $obj -> getPart($text);
+							$customers = $customer -> searchcustomers($text);
 
 							}
 
 							else 
 								{
-									$obj = new parts();
+									$customer = new Customer();
 									$text="";
-									$part = $obj -> getPart($text);
+									$customers = $customer -> searchcustomers($text);
 								}
 
 							
-							if ($part==false){
+							if ($customers==false){
 								echo "Error";
 								exit();
 							}
 							
 							else
 							{
-								$row = $obj ->fetch();
+								$row = $customer ->fetch();
 							
 							while ($row!=false)
 							{
 								echo "
                                 <tbody>
                                     <tr>
-                                        <th>{$row["pname"]}</th>
-                                        <td>{$row["price"]}</td>
-                                        <td>{$row["category"]}</td>
+                                        <th>{$row["cfirstname"]} {$row["clastname"]} </th>
+                                        <td>{$row["house"]}</td>
+                                        <td>{$row["town"]}</td>
+                                        <td>{$row["region"]}</td>
+                                        <td>{$row["phone"]}</td>
+                                        <td>{$row["email"]}</td>
                                     </tr>";
-                                    $row = $obj ->fetch();
+                                    $row = $customer ->fetch();
 							}
 							}
 							
