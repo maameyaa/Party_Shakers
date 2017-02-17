@@ -246,7 +246,7 @@
             </div>
 
             <div class="collapse clearfix" id="search">
-SS
+
                 <form class="navbar-form" role="search">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search">
@@ -340,12 +340,7 @@ SS
                                         <th>Town</th>
                                         <th>Region</th>
                                         <th>Phone Number</th>
-                                        <th>HireDate</th>
-                                        <th>Birthdate</th>
-                                        <th>Gender</th>
                                         <th>Email</th>
-                                        <th>Password</th>
-                                        <th>Username</th>
                                     </tr>
                                 </thead>
 
@@ -393,13 +388,8 @@ SS
                                         <td>{$row["house"]}</td>
                                         <td>{$row["town"]}</td>
                                         <td>{$row["region"]}</td>
-                                        <td>{$row["hiredate"]}</td>
-                                        <td>{$row["birthdate"]}</td>
                                         <td>{$row["phone"]}</td>
                                         <td>{$row["email"]}</td>
-                                        <td>{$row["gender"]}</td>
-                                        <td>{$row["password"]}</td>
-                                        <td>{$row["eusername"]}</td>
                                     </tr>";
                                     $row = $Employees ->fetch();
 							}
