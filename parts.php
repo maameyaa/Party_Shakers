@@ -41,6 +41,33 @@ class parts extends adb{
                       pno = '$pno'";
           return $this->query($strQuery);
      }
+     function countDecorations(){
+      $strQuery = "select COUNT(*) count from parts where category = 'Decorations'";
+      return $this->query($strQuery);
+     }
 
+      function countFood(){
+      $strQuery = "select COUNT(*) count from parts where category = 'Food'";
+      return $this->query($strQuery);
+     }
 
+     function countUtensils(){
+      $strQuery = "select COUNT(*) count from parts where category = 'Utensils'";
+      return $this->query($strQuery);
+     }
+
+     function countCostume(){
+      $strQuery = "select COUNT(*) count from parts where category = 'Costume'";
+      return $this->query($strQuery);
+     }
+
+     function countParts($part='none'){
+      $strQuery = "SELECT category,count(*) from parts group by category'";
+      return $this->query($strQuery);      
+     }
+     function countCategories()
+     {
+      $strQuery = "SELECT category,count(*) count from parts group by category";
+      return $this->query($strQuery);
+     }
    }
