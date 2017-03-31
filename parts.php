@@ -42,21 +42,11 @@ class parts extends adb{
           return $this->query($strQuery);
      }
 
-
-     function countCategories()
+    function countCategories()
      {
       $strQuery = "SELECT category,count(*) count from parts group by category";
       return $this->query($strQuery);
      }
 
-      function getPath($pno){
-          $strQuery="select image from parts where pno = $pno";
-          return $this->query($strQuery);
-     }
 
-      function editPath($pno,$path){
-          $strQuery="update parts SET image = '$path' from parts where pno = $pno";
-          return $this->query($strQuery);
-     }
-     
    }

@@ -47,7 +47,7 @@
 <body>
     <!-- *** TOPBAR ***
  _________________________________________________________ -->
-    <div id="top">
+<!--     <div id="top">
         <div class="container">
             <div class="col-md-6 offer" data-animate="fadeInDown">
                 <a href="#" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a>  <a href="#">Get flat 35% off on orders over GHs50!</a>
@@ -97,7 +97,7 @@
         </div>
 
     </div>
-
+ -->
     <!-- *** TOP BAR END *** -->
 
      <!-- *** NAVBAR ***
@@ -120,9 +120,9 @@
                         <span class="sr-only">Toggle search</span>
                         <i class="fa fa-search"></i>
                     </button>
-                    <a class="btn btn-default navbar-toggle" href="basket.html">
+<!--                     <a class="btn btn-default navbar-toggle" href="basket.html">
                         <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">3 items in cart</span>
-                    </a>
+                    </a> -->
                 </div>
             </div>
             <!--/.navbar-header -->
@@ -130,9 +130,9 @@
             <div class="navbar-collapse collapse" id="navigation">
 
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="index.html">Home</a>
+                    <li class="active"><a href="index.php">Home</a>
                     </li>
-                    <li class="dropdown yamm-fw">
+<!--                     <li class="dropdown yamm-fw">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Categories <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -189,13 +189,13 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- /.yamm-content -->
-                            </li>
+  <!--                           </li>
                         </ul>
-                    </li>
+                    </li> -->
 
-                    <li class="dropdown yamm-fw">
+<!--                     <li class="dropdown yamm-fw">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">Account <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
@@ -217,11 +217,11 @@
                                             </ul>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!-- /.yamm-content -->
-                            </li>
+     <!--                        </li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
 
             </div>
@@ -229,9 +229,9 @@
 
             <div class="navbar-buttons">
 
-                <div class="navbar-collapse collapse right" id="basket-overview">
+<!--                 <div class="navbar-collapse collapse right" id="basket-overview">
                     <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">3 items in cart</span></a>
-                </div>
+                </div> -->
                 <!--/.nav-collapse -->
 
                 <div class="navbar-collapse collapse right" id="search-not-mobile">
@@ -240,7 +240,7 @@
                         <input type="text" name="text" class="form-control" placeholder="Search">
                         <span class="input-group-btn" >
                          <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-    </span>
+                        </span>
                 </div>
 
             </div>
@@ -285,25 +285,29 @@ SS
  _________________________________________________________ -->
                     <div class="panel panel-default sidebar-menu">
 
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Search</h3>
-                        </div>
-
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
                                 <li>
-                                    <a href="text.html">Customers</a>
+                                    <a href="customer-search.php">Customers</a>
+                                </li>
+                                <li class="active">
+                                    <a href="employee-search.php">Empolyees</a>
                                 </li>
                                 <li>
-                                    <a href="text.html">Employees</a>
+                                    <a href="partsSearch.php">Items</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact page</a>
+                                    <a href="employeePage.php">Orders</a>
                                 </li>
                                 <li>
-                                    <a href="faq.html">FAQ</a>
+                                    <a href="https://analytics.google.com/analytics/web/?authuser=0#realtime/rt-overview/a96259899w141882786p146443785/">Visitors</a>
                                 </li>
-
+                                <li>
+                                    <a href="Export/csv.php">Reporting page</a>
+                                </li>
+                                <li>
+                                    <a href="charts.php">Charts</a>
+                                </li>
                             </ul>
 
                         </div>
@@ -337,12 +341,7 @@ SS
                                         <th>Town</th>
                                         <th>Region</th>
                                         <th>Phone Number</th>
-                                        <th>HireDate</th>
-                                        <th>Birthdate</th>
-                                        <th>Gender</th>
                                         <th>Email</th>
-                                        <th>Password</th>
-                                        <th>eusername</th>
                                     </tr>
                                 </thead>
 
@@ -390,13 +389,8 @@ SS
                                         <td>{$row["house"]}</td>
                                         <td>{$row["town"]}</td>
                                         <td>{$row["region"]}</td>
-                                        <td>{$row["hiredate"]}</td>
-                                        <td>{$row["birthdate"]}</td>
                                         <td>{$row["phone"]}</td>
                                         <td>{$row["email"]}</td>
-                                        <td>{$row["gender"]}</td>
-                                        <td>{$row["password"]}</td>
-                                        <td>{$row["eusername"]}</td>
                                     </tr>";
                                     $row = $Employees ->fetch();
 							}
@@ -570,6 +564,18 @@ SS
 
     <!-- *** SCRIPTS TO INCLUDE ***
  _________________________________________________________ -->
+
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96259899-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.cookie.js"></script>

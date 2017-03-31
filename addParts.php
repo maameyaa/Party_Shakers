@@ -287,20 +287,26 @@ SS
 
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked">
-                                <li>
-                                    <a href="text.html">Customers</a>
+                                <li >
+                                    <a href="customer-search.php">Customers</a>
                                 </li>
                                 <li>
-                                    <a href="text.html">Empolyees</a>
+                                    <a href="employee-search.php">Empolyees</a>
                                 </li>
-                                <li>
+                                <li class="active">
                                     <a href="partsSearch.php">Items</a>
                                 </li>
                                 <li>
-                                    <a href="contact.html">Contact page</a>
+                                    <a href="employeePage.php">Orders</a>
                                 </li>
                                 <li>
-                                    <a href="faq.html">FAQ</a>
+                                    <a href="https://analytics.google.com/analytics/web/?authuser=0#realtime/rt-overview/a96259899w141882786p146443785/">Visitors</a>
+                                </li>
+                                <li>
+                                    <a href="#">Reporting page</a>
+                                </li>
+                                <li>
+                                    <a href="charts.php">Charts</a>
                                 </li>
 
                             </ul>
@@ -381,11 +387,6 @@ SS
                                 </div>
                             </div>
                         </form>
-                        <form action="upload.php" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-</form>
                     </div>
                     <!-- /.box -->
 <?php
@@ -578,6 +579,18 @@ SS
 
     <!-- *** SCRIPTS TO INCLUDE ***
  _________________________________________________________ -->
+
+ <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-96259899-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.cookie.js"></script>

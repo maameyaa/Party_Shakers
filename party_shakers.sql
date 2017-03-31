@@ -9,7 +9,7 @@
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
-
+USE party_shakers;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -140,7 +140,9 @@ INSERT INTO `parts` (`pno`, `pname`, `qoh`, `price`, `olevel`, `category`, `imag
 (1, 'Ribbon', 50, '2.50', 5, 'Decorations', ''),
 (3, 'Cup', 21, '2.00', 0, 'Utensils', ''),
 (4, 'Chips', 40, '3.00', 10, 'Food', '');
-
+(5, 'Balloons', 40, '5.00', 10, 'Decorations', '');
+(6, 'Wine', 50, '20.00', 10, 'Food', '');
+(7, 'Streamer', 40, '3.00', 10, 'Decorations', '');
 --
 -- Indexes for dumped tables
 --
