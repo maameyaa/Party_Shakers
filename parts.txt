@@ -1,0 +1,4 @@
+1;Halloween face cap;2;15;2;Costume
+2;Confetti;11;20;11;Decorations
+3;Coca Cola Diet;2;20;2;Drinks
+4;Diary Chocolate;2;10;2;Food
