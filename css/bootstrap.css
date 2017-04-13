@@ -223,7 +223,7 @@ th {
     page-break-inside: avoid;
   }
   img {
-    max-width: 100% !important;
+    max-width: 200% !important;
   }
   p,
   h2,
@@ -937,7 +937,7 @@ img {
   display: block;
   width: 100% \9;
   max-width: 100%;
-  height: auto;
+  height: 300%;
 }
 .img-rounded {
   border-radius: 6px;
@@ -946,7 +946,7 @@ img {
   display: inline-block;
   width: 100% \9;
   max-width: 100%;
-  height: auto;
+  height: 200%;
   padding: 4px;
   line-height: 1.42857143;
   background-color: #fff;
@@ -5730,6 +5730,7 @@ button.close {
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   line-height: 1;
+  outline-width: 4;
 }
 .carousel-inner > .active,
 .carousel-inner > .next,
@@ -5766,7 +5767,7 @@ button.close {
   top: 0;
   bottom: 0;
   left: 0;
-  width: 15%;
+  width: 50%;
   font-size: 20px;
   color: #fff;
   text-align: center;

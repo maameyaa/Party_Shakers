@@ -23,7 +23,7 @@ class adb{
 	function connect(){
 		
 		//connect
-		$this->db=new mysqli(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
+		$this->db=mysqli_connect(DB_HOST,DB_USERNAME,DB_PASSWORD,DB_NAME);
 		if($this->db->connect_errno){
 			//no connection, exit
 			return false;
@@ -44,8 +44,10 @@ class adb{
 		}
 		$this->result=$this->db->query($strQuery);
 		if($this->result==false){
+			echo mysqli_error($this->db);
 			return false;
 		}
+		
 		return true;
 	}
 	/*
