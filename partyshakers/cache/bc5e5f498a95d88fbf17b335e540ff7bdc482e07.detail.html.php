@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 23:02:09
+/* Smarty version 3.1.30, created on 2017-04-29 23:34:25
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\detail.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904ff5148bbb9_70622898',
+  'unifunc' => 'content_590506e14ae048_49475714',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fdde0e5d4a2a458b88cf7cce41812849295d138e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\detail.html',
-      1 => 1493499722,
+      1 => 1493499764,
       2 => 'file',
     ),
     '424622e207a164a5011b2c22ff94a5bb0cf5df33' => 
@@ -24,13 +24,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
-      1 => 1493498952,
+      1 => 1493500534,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_5904ff5148bbb9_70622898 (Smarty_Internal_Template $_smarty_tpl) {
+function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
  <!DOCTYPE html>
 <html lang="en">
@@ -131,8 +131,7 @@ function content_5904ff5148bbb9_70622898 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <div class="col-md-6" data-animate="fadeInDown">
                 <ul class="menu">
-                     
-                     <li ><div><a href="#" data-toggle="modal" data-target="#login-modal">login</a></div>
+                                        <li ><div><a href="#" data-toggle="modal" data-target="#logout-modal">Maame Yaa </a></div>
                       
                     </li>
                     <li><a href="index.php?cmd=2">Register</a>
@@ -375,11 +374,11 @@ function content_5904ff5148bbb9_70622898 (Smarty_Internal_Template $_smarty_tpl)
                     <ul class="breadcrumb">
                         <li><a href="index.html">Home</a>
                         </li>
-                        <li>Decorations</li>
+                        <li></li>
 
 
 
-                        <li>Colored Balloons</li>
+                        <li></li>
                     </ul>
 
                 </div>
@@ -427,7 +426,7 @@ function content_5904ff5148bbb9_70622898 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="col-sm-6">
                             <div id="mainImage">
 
-                                <img src= 'img/Decorations/Colored_balloons.jpg' alt="" class="img-responsive">
+                                <img src= '' alt="" class="img-responsive">
                             </div>
 
                             <div class="ribbon sale">
@@ -445,13 +444,13 @@ function content_5904ff5148bbb9_70622898 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                         <div class="col-sm-6">
                             <div class="box">
-                                <h1 class="text-center"><Colored Balloons></h1>
+                                <h1 class="text-center"><></h1>
                                 <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details</a>
                                 </p>
-                                <p class="price">¢0.50</p>
+                                <p class="price">¢</p>
 
                                 <p class="text-center buttons">
-                                     <a data-toggle='modal' data-target='#add-modal' data-pname = 'Colored Balloons' data-price = '0.50' data-pno = '<br />
+                                     <a data-toggle='modal' data-target='#add-modal' data-pname = '' data-price = '' data-pno = '<br />
 <b>Notice</b>:  Undefined index: itempno in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>123</b><br />
 <br />
 <b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>123</b><br />
@@ -484,7 +483,7 @@ function content_5904ff5148bbb9_70622898 (Smarty_Internal_Template $_smarty_tpl)
                                          <div>  Quantity : <input type= 'number'  min="1" max="20"  placeholder='0' id ="qty" > </div>
                                     </div>
 
-                                   <!--  <br></br> -->
+                                    <br></br>
 
                                     <!-- <div id="divStatus"></div> -->
 
@@ -504,7 +503,11 @@ function content_5904ff5148bbb9_70622898 (Smarty_Internal_Template $_smarty_tpl)
                     <div class="box" id="details">
                         <p>
                             <h4>Product details</h4>
-                            <p>Colors available vary from pink, orange, blue, red, yellow and purple.</p>
+                            <p><br />
+<b>Notice</b>:  Undefined index: itemdescription in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>173</b><br />
+<br />
+<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>173</b><br />
+</p>
 
                             <hr>
                             <div class="social">
@@ -710,6 +713,8 @@ function content_5904ff5148bbb9_70622898 (Smarty_Internal_Template $_smarty_tpl)
          function addtocart(){
              var pno = $('#pno').val();
              var qty = $('#qty').val();
+
+             alert (qty);
 
 
              var ajaxPageUrl="cartajax.php?cmd=1&pno="+pno+"&qty="+qty;

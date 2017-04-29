@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 22:39:30
+/* Smarty version 3.1.30, created on 2017-04-29 23:30:03
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\basket.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904fa02e3aa98_13529696',
+  'unifunc' => 'content_590505dba76224_58545243',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -24,13 +24,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
-      1 => 1492817977,
+      1 => 1493500534,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_5904fa02e3aa98_13529696 (Smarty_Internal_Template $_smarty_tpl) {
+function content_590505dba76224_58545243 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <!DOCTYPE html>
 <html lang="en">
@@ -385,18 +385,18 @@ function content_5904fa02e3aa98_13529696 (Smarty_Internal_Template $_smarty_tpl)
                     <div class="box">
                             <h1>Shopping cart</h1>
                             <p class="text-muted">You currently have 
-                               <!--  /*%%SmartyNocache:31745904fa028365a4_08867373%%*/<?php echo '<?php'; ?>
+                               <!--  /*%%SmartyNocache:25288590505da9276e2_33287524%%*/<?php echo '<?php'; ?>
  echo '<?php echo '<?php'; ?>
 
                                     ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:31745904fa028365a4_08867373%%*/include_once("orders.php");
+/*/%%SmartyNocache:25288590505da9276e2_33287524%%*/include_once("orders.php");
                                     $obj=new orders(); 
                                     $s=$obj->countItems($_SESSION['cno']);
                                     echo $s;
-                                /*%%SmartyNocache:31745904fa028365a4_08867373%%*/<?php echo '<?php'; ?>
+                                /*%%SmartyNocache:25288590505da9276e2_33287524%%*/<?php echo '<?php'; ?>
  echo '<?php echo '?>'; ?>
 ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:31745904fa028365a4_08867373%%*/ --> 
+/*/%%SmartyNocache:25288590505da9276e2_33287524%%*/ --> 
                                 item(s) in your cart.</p>
                             <div class="table-responsive">
                                 <table class="table">
@@ -685,6 +685,8 @@ function content_5904fa02e3aa98_13529696 (Smarty_Internal_Template $_smarty_tpl)
              var pno = $('#pno').val();
              var qty = $('#qty').val();
 
+             alert (qty);
+
 
              var ajaxPageUrl="cartajax.php?cmd=1&pno="+pno+"&qty="+qty;
                 
@@ -722,8 +724,14 @@ function content_5904fa02e3aa98_13529696 (Smarty_Internal_Template $_smarty_tpl)
                      }
          }
 
-         function deleteitem(){
+         function deleteitem($id){
+
+
            
+         }
+
+         function deleteitemcomplete(){
+
          }
 
        // function subtotal(){

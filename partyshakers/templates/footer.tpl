@@ -180,6 +180,8 @@
              var pno = $('#pno').val();
              var qty = $('#qty').val();
 
+             alert (qty);
+
 
              var ajaxPageUrl="cartajax.php?cmd=1&pno="+pno+"&qty="+qty;
                 

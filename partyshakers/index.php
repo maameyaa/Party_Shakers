@@ -9,10 +9,13 @@ if(isset($_SESSION['name'])){
 
 	$name = $_SESSION['name'];
 
-	echo $name;
+	//echo $name;
 
 	$smarty->assign("name", $name);
 }
+
+$smarty->assign("itemsincart", 0);
+
 
 //This block of code gets the number of items in the cart
 // if(isset($_SESSION['login'])){
@@ -151,7 +154,8 @@ if(!isset($_REQUEST['cmd'])){
 			$smarty->assign("itemimage", $image);
 			$smarty->assign("itemname", $name);
 			$smarty->assign("itemprice", $price);
-			$smarty->assign("itemdescription", $description); 
+			$smarty->assign("
+				", $description); 
 			$smarty->assign("itemcategory", $category); 
 
 

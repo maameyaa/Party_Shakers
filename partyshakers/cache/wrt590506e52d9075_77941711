@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 23:33:55
-  from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\customer-orders.html" */
+/* Smarty version 3.1.30, created on 2017-04-29 23:34:29
+  from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\category.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_590506c395df43_36563328',
+  'unifunc' => 'content_590506e52bd9d5_40244383',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '3c611a18579af247e9ce70ae2790bf6af623f89e' => 
+    '525e603318d68d8b0ef225005de36eab6ae066e0' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\customer-orders.html',
-      1 => 1493501626,
+      0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\category.tpl',
+      1 => 1493500596,
       2 => 'file',
     ),
     '424622e207a164a5011b2c22ff94a5bb0cf5df33' => 
@@ -30,7 +30,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_590506c395df43_36563328 (Smarty_Internal_Template $_smarty_tpl) {
+function content_590506e52bd9d5_40244383 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
  <!DOCTYPE html>
 <html lang="en">
@@ -372,93 +372,338 @@ function content_590506c395df43_36563328 (Smarty_Internal_Template $_smarty_tpl)
             <div class="container">
 
                 <div class="col-md-12">
-
                     <ul class="breadcrumb">
-                        <li><a href="#">Home</a>
+                        <li><a href="index.php">Home</a>
                         </li>
-                        <li>My orders</li>
+                        <li>Decorations</li>
                     </ul>
-
                 </div>
 
                 <div class="col-md-3">
-                    <!-- *** CUSTOMER MENU ***
+                    <!-- *** MENUS AND FILTERS ***
  _________________________________________________________ -->
                     <div class="panel panel-default sidebar-menu">
 
                         <div class="panel-heading">
-                            <h3 class="panel-title">Customer section</h3>
+                            <h3 class="panel-title">Categories</h3>
                         </div>
 
                         <div class="panel-body">
+                            <ul class="nav nav-pills nav-stacked category-menu">
+                                <li>
+                                    <a href="category.php?category=Decorations">Decorations</a>
+                                </li>
+                                <li>
+                                    <a href="category.php?category=Costume">Costumes</a>
+                                </li>
+                                <li>
+                                    <a href="category.php?category=Food">Food & Drinks</a>
+                                </li>
+                                <li>
+                                    <a href="category.php?category=Utensils">Tableware</a>
+                                </li>
 
-                            <ul class="nav nav-pills nav-stacked">
-                                <li class="active">
-                                    <a href="customer-orders.html"><i class="fa fa-list"></i> My orders</a>
-                                </li>
-                                <li>
-                                    <a href="customer-wishlist.html"><i class="fa fa-heart"></i> My wishlist</a>
-                                </li>
-                                <li>
-                                    <a href="customer-account.html"><i class="fa fa-user"></i> My account</a>
-                                </li>
-                                <li>
-                                    <a href="index.html"><i class="fa fa-sign-out"></i> Logout</a>
-                                </li>
                             </ul>
+
                         </div>
-
                     </div>
-                    <!-- /.col-md-3 -->
 
-                    <!-- *** CUSTOMER MENU END *** -->
-                </div>
+                    <!-- *** MENUS AND FILTERS END *** -->
 
-                <div class="col-md-9" id="customer-orders">
-                    <div class="box">
-                        <h1>My orders</h1>
-
-                        <p class="lead">Your orders on one place.</p>
-                        <p class="text-muted">If you have any questions, please feel free to <a href="contact.html">contact us</a>, our customer service center is working for you 24/7.</p>
-
-                        <hr>
-                        
-
-       
-
-                        <div class="table-responsive">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Order</th>
-                                        <th>Date</th>
-                                        <th>Total</th>
-                                        <th>Status</th>
-                                        <th>Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    
-                                                                        <tr>
-                                        <th>1</th>
-                                        <td>2017-04-21 17:26:14</td>
-                                        <td>0</td>
-                                        <td><span class="label label-info"></span>
-                                        </td>
-                                        <td><a href="customer-order.html" class="btn btn-primary btn-sm">View</a>
-                                        </td>
-                                    
-                              </tr>
-                                </tbody>
-                            </table>
-                        </div> 
+                    <div class="banner">
+                        <a href="#">
+                            <img src="img/banner.jpg" alt="sales 2014" class="img-responsive">
+                        </a>
                     </div>
                 </div>
 
+                <div class="col-md-9">
+                    <div class="box info-bar">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 products-showing">
+                                Showing <strong>12</strong> of <strong>25</strong> products
+                            </div>
+
+                            <div class="col-sm-12 col-md-8  products-number-sort">
+                                <div class="row">
+                                    <form class="form-inline">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="products-number">
+                                                <strong>Show</strong>  <a href="#" class="btn btn-default btn-sm btn-primary">12</a>  <a href="#" class="btn btn-default btn-sm">24</a>  <a href="#" class="btn btn-default btn-sm">All</a> products
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="products-sort-by">
+                                                <strong>Sort by</strong>
+                                                <select name="sort-by" class="form-control">
+                                                    <option>Price</option>
+                                                    <option>Name</option>
+                                                    <option>Sales first</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row products">
+                                <!-- /.text -->
+                                
+                                <div class='col-md-4 col-sm-6'>
+                                    <div class='product'>
+                                        <div class='flip-container'>
+                                        <div class='flipper'>
+                                            <div class='front'>
+                                                <a href='index.php?cmd=8&pno=19'>
+                                                    <img src=img/Decorations/Colored_balloons.jpg  alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                            <div class='back'>
+                                                <a href='index.php?cmd=8&pno=19'>
+                                                    <img src="img/Decorations/Colored_balloons.jpg" alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+                                <a href='index.php?cmd=8&pno=19' class='invisible'>
+                                    <img src='img/Decorations/Colored_balloons.jpg' alt='' class='img-responsive'>
+                                </a>
+                                    <div class='text'>
+                                        <h3>
+                                        <a href='index.php?cmd=8&pno=19'>Colored Balloons </a></h3>
+                                        <p class='price'> ¢ 0.50</p>
+                                        <p class='buttons'>
+                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        
+                                        <a data-toggle='modal' data-target='#add-modal' data-pname = 'Colored Balloons' data-price = '0.50' data-pno = '19'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                             </div>
+
+                                
+                                <div class='col-md-4 col-sm-6'>
+                                    <div class='product'>
+                                        <div class='flip-container'>
+                                        <div class='flipper'>
+                                            <div class='front'>
+                                                <a href='index.php?cmd=8&pno=20'>
+                                                    <img src=img/Decorations/confetti.jpg  alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                            <div class='back'>
+                                                <a href='index.php?cmd=8&pno=20'>
+                                                    <img src="img/Decorations/confetti.jpg" alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+                                <a href='index.php?cmd=8&pno=20' class='invisible'>
+                                    <img src='img/Decorations/confetti.jpg' alt='' class='img-responsive'>
+                                </a>
+                                    <div class='text'>
+                                        <h3>
+                                        <a href='index.php?cmd=8&pno=20'>Confetti </a></h3>
+                                        <p class='price'> ¢ 6.50</p>
+                                        <p class='buttons'>
+                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        
+                                        <a data-toggle='modal' data-target='#add-modal' data-pname = 'Confetti' data-price = '6.50' data-pno = '20'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                             </div>
+
+                                
+                                <div class='col-md-4 col-sm-6'>
+                                    <div class='product'>
+                                        <div class='flip-container'>
+                                        <div class='flipper'>
+                                            <div class='front'>
+                                                <a href='index.php?cmd=8&pno=21'>
+                                                    <img src=img/Decorations/festive_grids.jpg  alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                            <div class='back'>
+                                                <a href='index.php?cmd=8&pno=21'>
+                                                    <img src="img/Decorations/festive_grids.jpg" alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+                                <a href='index.php?cmd=8&pno=21' class='invisible'>
+                                    <img src='img/Decorations/festive_grids.jpg' alt='' class='img-responsive'>
+                                </a>
+                                    <div class='text'>
+                                        <h3>
+                                        <a href='index.php?cmd=8&pno=21'>Festive grids </a></h3>
+                                        <p class='price'> ¢ 45.00</p>
+                                        <p class='buttons'>
+                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        
+                                        <a data-toggle='modal' data-target='#add-modal' data-pname = 'Festive grids' data-price = '45.00' data-pno = '21'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                             </div>
+
+                                
+                                <div class='col-md-4 col-sm-6'>
+                                    <div class='product'>
+                                        <div class='flip-container'>
+                                        <div class='flipper'>
+                                            <div class='front'>
+                                                <a href='index.php?cmd=8&pno=22'>
+                                                    <img src=img/Decorations/Plain_silkBalloons.jpg  alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                            <div class='back'>
+                                                <a href='index.php?cmd=8&pno=22'>
+                                                    <img src="img/Decorations/Plain_silkBalloons.jpg" alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+                                <a href='index.php?cmd=8&pno=22' class='invisible'>
+                                    <img src='img/Decorations/Plain_silkBalloons.jpg' alt='' class='img-responsive'>
+                                </a>
+                                    <div class='text'>
+                                        <h3>
+                                        <a href='index.php?cmd=8&pno=22'>Silk Balloons </a></h3>
+                                        <p class='price'> ¢ 4.50</p>
+                                        <p class='buttons'>
+                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        
+                                        <a data-toggle='modal' data-target='#add-modal' data-pname = 'Silk Balloons' data-price = '4.50' data-pno = '22'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                             </div>
+
+                                
+                                <div class='col-md-4 col-sm-6'>
+                                    <div class='product'>
+                                        <div class='flip-container'>
+                                        <div class='flipper'>
+                                            <div class='front'>
+                                                <a href='index.php?cmd=8&pno=23'>
+                                                    <img src=img/Decorations/shaped_balloons.jpg  alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                            <div class='back'>
+                                                <a href='index.php?cmd=8&pno=23'>
+                                                    <img src="img/Decorations/shaped_balloons.jpg" alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+                                <a href='index.php?cmd=8&pno=23' class='invisible'>
+                                    <img src='img/Decorations/shaped_balloons.jpg' alt='' class='img-responsive'>
+                                </a>
+                                    <div class='text'>
+                                        <h3>
+                                        <a href='index.php?cmd=8&pno=23'>Shaped Ballons </a></h3>
+                                        <p class='price'> ¢ 1.50</p>
+                                        <p class='buttons'>
+                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        
+                                        <a data-toggle='modal' data-target='#add-modal' data-pname = 'Shaped Ballons' data-price = '1.50' data-pno = '23'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                             </div>
+
+                                
+                                <div class='col-md-4 col-sm-6'>
+                                    <div class='product'>
+                                        <div class='flip-container'>
+                                        <div class='flipper'>
+                                            <div class='front'>
+                                                <a href='index.php?cmd=8&pno=24'>
+                                                    <img src=img/Decorations/party_confetti.png  alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                            <div class='back'>
+                                                <a href='index.php?cmd=8&pno=24'>
+                                                    <img src="img/Decorations/party_confetti.png" alt='' class='img-responsive'>
+                                                </a>
+                                            </div>
+                                        </div>
+                                </div>
+                                <a href='index.php?cmd=8&pno=24' class='invisible'>
+                                    <img src='img/Decorations/party_confetti.png' alt='' class='img-responsive'>
+                                </a>
+                                    <div class='text'>
+                                        <h3>
+                                        <a href='index.php?cmd=8&pno=24'>Colored confetti </a></h3>
+                                        <p class='price'> ¢ 12.50</p>
+                                        <p class='buttons'>
+                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        
+                                        <a data-toggle='modal' data-target='#add-modal' data-pname = 'Colored confetti' data-price = '12.50' data-pno = '24'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                             </div>
+
+                                
+
+                                </div>
+                            <!-- /.product -->
+                    <div class="modal fade" id="add-modal" tabindex="-1" role="dialog" aria-labelledby="Add" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                   <h4 class="modal-title" id="Login"> <p class="text-center">Confirm</h4>
+                                    
+                                </div>
+                                <div class="modal-body">
+                                    <div >
+                                        <input style ="border: none;" name="pno" id ="pno" hidden>
+                                 
+                                          <div> Product: <input style ="border: none;" name="pname" id ="name" > </div>
+                            
+                                         <div>Price : <input style = "border: none;" name="price" id ="price" > </div>
+
+                                         <div>  Quantity : <input type= 'number'  min="1" max="20"  placeholder='0' id ="qty" > </div>
+                                    </div>
+
+                                   <!--  <br></br> -->
+
+                                    <!-- <div id="divStatus"></div> -->
+
+
+                                        <p class="text-center">
+                                            <button  onclick = "addtocart()" class="btn btn-primary" href="basket.php" name="addtocart"><i class="fa fa-sign-in"></i>Add to Cart</button>
+                                            <button class="btn btn-primary" href="basket.php" name="viewcart"><i class="fa fa-sign-in"></i>View Cart</button>
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                  <!-- /.products -->
+
+
+                </div>
+                <!-- /.col-md-9 -->
             </div>
             <!-- /.container -->
         </div>
         <!-- /#content -->
+
+
+
 
          <!-- *** FOOTER ***
  _________________________________________________________ -->
@@ -706,5 +951,6 @@ function content_590506c395df43_36563328 (Smarty_Internal_Template $_smarty_tpl)
    
 </body>
 
-</html> <?php }
+</html> 
+<?php }
 }

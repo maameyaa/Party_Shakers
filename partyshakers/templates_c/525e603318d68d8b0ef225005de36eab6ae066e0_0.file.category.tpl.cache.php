@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 20:31:19
+/* Smarty version 3.1.30, created on 2017-04-29 23:34:28
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\category.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904dbf73d68c5_18105201',
+  'unifunc' => 'content_590506e4998503_50060690',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '525e603318d68d8b0ef225005de36eab6ae066e0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\category.tpl',
-      1 => 1493489363,
+      1 => 1493500596,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5904dbf73d68c5_18105201 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '22825904dbf725ff49_97055018';
+function content_590506e4998503_50060690 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '6031590506e476ff27_90752462';
 ?>
  <?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -194,7 +194,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
                                          <div>  Quantity : <input type= 'number'  min="1" max="20"  placeholder='0' id ="qty" > </div>
                                     </div>
 
-                                    <br></br>
+                                   <!--  <br></br> -->
 
                                     <!-- <div id="divStatus"></div> -->
 

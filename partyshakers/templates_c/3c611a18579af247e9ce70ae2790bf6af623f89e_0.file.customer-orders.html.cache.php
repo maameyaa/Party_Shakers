@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-21 20:58:42
+/* Smarty version 3.1.30, created on 2017-04-29 23:33:55
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\customer-orders.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_58fa56621bff81_28662057',
+  'unifunc' => 'content_590506c348b570_54965755',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3c611a18579af247e9ce70ae2790bf6af623f89e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\customer-orders.html',
-      1 => 1492801114,
+      1 => 1493501626,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_58fa56621bff81_28662057 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '2846258fa5661871475_51104560';
+function content_590506c348b570_54965755 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '10514590506c33af842_37584229';
 ?>
  <?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -112,9 +112,9 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 </th>
                                         <td><?php echo $_smarty_tpl->tpl_vars['item']->value['orderdate'];?>
 </td>
-                                        <td><?php echo $_smarty_tpl->tpl_vars['item']->value['Total'];?>
+                                        <td><?php echo $_smarty_tpl->tpl_vars['item']->value['total'];?>
 </td>
-                                        <td><span class="label label-info"><?php echo $_smarty_tpl->tpl_vars['item']->value['Status'];?>
+                                        <td><span class="label label-info"><?php echo $_smarty_tpl->tpl_vars['item']->value['status'];?>
 </span>
                                         </td>
                                         <td><a href="customer-order.html" class="btn btn-primary btn-sm">View</a>

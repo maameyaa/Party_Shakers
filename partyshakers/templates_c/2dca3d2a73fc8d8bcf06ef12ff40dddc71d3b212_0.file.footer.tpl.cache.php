@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 23:02:09
+/* Smarty version 3.1.30, created on 2017-04-29 23:34:29
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\footer.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904ff51302eb7_47104712',
+  'unifunc' => 'content_590506e510e694_13302711',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
-      1 => 1493498952,
+      1 => 1493500534,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5904ff51302eb7_47104712 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '185915904ff51283f77_33205805';
+function content_590506e510e694_13302711 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '17957590506e50afad2_03808423';
 ?>
         <!-- *** FOOTER ***
  _________________________________________________________ -->
@@ -221,6 +221,8 @@ $_smarty_tpl->compiled->nocache_hash = '185915904ff51283f77_33205805';
          function addtocart(){
              var pno = $('#pno').val();
              var qty = $('#qty').val();
+
+             alert (qty);
 
 
              var ajaxPageUrl="cartajax.php?cmd=1&pno="+pno+"&qty="+qty;

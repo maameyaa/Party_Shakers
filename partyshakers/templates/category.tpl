@@ -110,7 +110,7 @@
                                         <a href='index.php?cmd=8&pno={$item.pno}'>{$item.pname} </a></h3>
                                         <p class='price'> ¢ {$item.price}</p>
                                         <p class='buttons'>
-                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        <a href='index.php?cmd=8&pno={$item.pno}' class='btn btn-default'>View detail</a>
                                         
                                         <a data-toggle='modal' data-target='#add-modal' data-pname = '{$item.pname}' data-price = '{$item.price}' data-pno = '{$item.pno}'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
 
@@ -143,7 +143,7 @@
                                          <div>  Quantity : <input type= 'number'  min="1" max="20"  placeholder='0' id ="qty" > </div>
                                     </div>
 
-                                    <br></br>
+                                   <!--  <br></br> -->
 
                                     <!-- <div id="divStatus"></div> -->
 
