@@ -1,0 +1,221 @@
+<?php
+session_start();
+
+$cno = $_SESSION['cno'];
+?>
+
+ {include file="header.tpl"}
+
+    <div id="all">
+
+        <div id="content">
+            <div class="container">
+
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="index.php">Home</a>
+                        </li>
+                        <li><?php echo "{$row['category']}"; ?></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3">
+                    <!-- *** MENUS AND FILTERS ***
+ _________________________________________________________ -->
+                    <div class="panel panel-default sidebar-menu">
+
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Categories</h3>
+                        </div>
+
+                        <div class="panel-body">
+                            <ul class="nav nav-pills nav-stacked category-menu">
+                                <li>
+                                    <a href="category.php?category=Decorations">Decorations</a>
+                                </li>
+                                <li>
+                                    <a href="category.php?category=Costume">Costumes</a>
+                                </li>
+                                <li>
+                                    <a href="category.php?category=Food">Food & Drinks</a>
+                                </li>
+                                <li>
+                                    <a href="category.php?category=Utensils">Tableware</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <!-- *** MENUS AND FILTERS END *** -->
+
+                    <div class="banner">
+                        <a href="#">
+                            <img src="img/banner.jpg" alt="sales 2014" class="img-responsive">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-9">
+                    <div class="box">
+                        <h1><?php echo "{$row['category']}"; ?></h1>
+                        <p>In this category we offer wide selection of the best products we have found and carefully selected worldwide.</p>
+                    </div>
+
+                    <div class="box info-bar">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-4 products-showing">
+                                Showing <strong>12</strong> of <strong>25</strong> products
+                            </div>
+
+                            <div class="col-sm-12 col-md-8  products-number-sort">
+                                <div class="row">
+                                    <form class="form-inline">
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="products-number">
+                                                <strong>Show</strong>  <a href="#" class="btn btn-default btn-sm btn-primary">12</a>  <a href="#" class="btn btn-default btn-sm">24</a>  <a href="#" class="btn btn-default btn-sm">All</a> products
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-6">
+                                            <div class="products-sort-by">
+                                                <strong>Sort by</strong>
+                                                <select name="sort-by" class="form-control">
+                                                    <option>Price</option>
+                                                    <option>Name</option>
+                                                    <option>Sales first</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row products">
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                    <div class="modal fade" id="add-modal" tabindex="-1" role="dialog" aria-labelledby="Add" aria-hidden="true">
+                        <div class="modal-dialog modal-sm">
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                   <h4 class="modal-title" id="Login"> <p class="text-center">One Item Added To Cart</h4>
+                                </div>
+                                <div class="modal-body">
+                                        <p class="text-center">
+                                            <button class="btn btn-primary" href="basket.php" name="login"><i class="fa fa-sign-in"></i>View Cart</button>
+                                        </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                    
+                        </div> -->
+
+                    </div>
+                    <!-- /.products -->
+
+
+                </div>
+                <!-- /.col-md-9 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+
+ {include file="footer.tpl"} 
+
+
+        <!-- *** COPYRIGHT ***
+ _________________________________________________________ -->
+        <div id="copyright">
+            <div class="container">
+                <div class="col-md-6">
+                    <p class="pull-left">© 2015 Party Shakers.</p>
+
+                </div>
+                <div class="col-md-6">
+                    <p class="pull-right">Template by <a href="https://bootstrapious.com/e-commerce-templates">Bootstrapious.com</a>
+                         <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) If you want to use the template without the attribution links, you can do so after supporting further themes development at https://bootstrapious.com/donate  -->
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- *** COPYRIGHT END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+
+    
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+ _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+
+    <script type="text/javascript">
+        
+        
+        function additem(){
+                var email =$('#email-modal').val();
+                var password =$('#password-modal').val();
+                var ajaxPageUrl="userajax.php?cmd=1&email="+email+"&password="+password;
+                
+                $.ajax(ajaxPageUrl, {literal}
+                       {async:true, complete:additemcomplete});
+                       {/literal} 
+            alert("Logged in");
+            }
+        
+        
+
+            function additemcomplete(xhr,status){
+
+                if(status!="success"){
+
+                     $('#divStatus').html("Error while logging in");
+
+                     return;        
+                }
+
+                    
+                    var obj=$.parseJSON(xhr.responseText);
+                    console.log(obj.result);
+
+                    if(obj.result==0){
+                        alert('here');
+                        $('#divStatus').html("Wrong Username or Password");
+                        return;
+
+                    }
+
+                    else{
+                       $('#loginStatus').html("Logout");
+                        alert("Hey");
+                        
+                        
+                        window.location.href ="index.php?cmd=1"
+                     }
+            }
+    </script>
+    
+
+</body>
+
+</html>
