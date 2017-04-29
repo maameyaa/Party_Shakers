@@ -129,25 +129,33 @@ if(!isset($_REQUEST['cmd'])){
 
          case 8:
 
-         if(isset($_REQUEST['pno']))
-         {
 	        $pno = $_REQUEST['pno'];
 
 	        include_once("parts.php");
+
 	        $obj = new parts();
 	        $result = $obj->getParts($pno);
 
-	        $items = array();
+	        $row = $obj->fetch();
 
-			while($row = $obj->fetch()){
+			$image = $row['image'];
 
-				$item[] = $row;
+			$name = $row['pname'];
 
-			}
+			$price = $row['price'];
 
-			$smarty->assign("item", $item);
+			$description = $row['description'];
+
+			$category = $row['category'];
+			
+			$smarty->assign("itemimage", $image);
+			$smarty->assign("itemname", $name);
+			$smarty->assign("itemprice", $price);
+			$smarty->assign("itemdescription", $description); 
+			$smarty->assign("itemcategory", $category); 
+
+
 			$smarty->display('detail.html');
-         }
 
          break;
 	}

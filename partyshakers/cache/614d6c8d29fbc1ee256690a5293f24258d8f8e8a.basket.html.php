@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 14:01:02
+/* Smarty version 3.1.30, created on 2017-04-29 22:39:30
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\basket.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904807e953de9_14434079',
+  'unifunc' => 'content_5904fa02e3aa98_13529696',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -30,7 +30,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_5904807e953de9_14434079 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5904fa02e3aa98_13529696 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <!DOCTYPE html>
 <html lang="en">
@@ -385,18 +385,18 @@ function content_5904807e953de9_14434079 (Smarty_Internal_Template $_smarty_tpl)
                     <div class="box">
                             <h1>Shopping cart</h1>
                             <p class="text-muted">You currently have 
-                               <!--  /*%%SmartyNocache:90755904807d33bc47_21269379%%*/<?php echo '<?php'; ?>
+                               <!--  /*%%SmartyNocache:31745904fa028365a4_08867373%%*/<?php echo '<?php'; ?>
  echo '<?php echo '<?php'; ?>
 
                                     ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:90755904807d33bc47_21269379%%*/include_once("orders.php");
+/*/%%SmartyNocache:31745904fa028365a4_08867373%%*/include_once("orders.php");
                                     $obj=new orders(); 
                                     $s=$obj->countItems($_SESSION['cno']);
                                     echo $s;
-                                /*%%SmartyNocache:90755904807d33bc47_21269379%%*/<?php echo '<?php'; ?>
+                                /*%%SmartyNocache:31745904fa028365a4_08867373%%*/<?php echo '<?php'; ?>
  echo '<?php echo '?>'; ?>
 ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:90755904807d33bc47_21269379%%*/ --> 
+/*/%%SmartyNocache:31745904fa028365a4_08867373%%*/ --> 
                                 item(s) in your cart.</p>
                             <div class="table-responsive">
                                 <table class="table">

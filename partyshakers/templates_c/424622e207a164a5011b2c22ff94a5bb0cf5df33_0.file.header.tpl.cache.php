@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 19:34:45
+/* Smarty version 3.1.30, created on 2017-04-29 23:02:08
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\header.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904ceb56127e8_64790825',
+  'unifunc' => 'content_5904ff50f2db40_15451717',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5904ceb56127e8_64790825 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '80935904ceb53fa3c6_13001497';
+function content_5904ff50f2db40_15451717 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '169585904ff50e03939_70067791';
 ?>
 <!DOCTYPE html>
 <html lang="en">

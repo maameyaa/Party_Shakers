@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 19:34:45
+/* Smarty version 3.1.30, created on 2017-04-29 20:31:19
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\category.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904ceb58685f7_56227614',
+  'unifunc' => 'content_5904dbf7b34c77_93087908',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '525e603318d68d8b0ef225005de36eab6ae066e0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\category.tpl',
-      1 => 1493485404,
+      1 => 1493489363,
       2 => 'file',
     ),
     '424622e207a164a5011b2c22ff94a5bb0cf5df33' => 
@@ -30,7 +30,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_5904ceb58685f7_56227614 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
  <!DOCTYPE html>
 <html lang="en">
@@ -457,23 +457,23 @@ function content_5904ceb58685f7_56227614 (Smarty_Internal_Template $_smarty_tpl)
                                         <div class='flip-container'>
                                         <div class='flipper'>
                                             <div class='front'>
-                                                <a href='index.php?cmd=8&pno=0.50'>
+                                                <a href='index.php?cmd=8&pno=19'>
                                                     <img src=img/Decorations/Colored_balloons.jpg  alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                             <div class='back'>
-                                                <a href='index.php?cmd=8&pno='+0.50>
+                                                <a href='index.php?cmd=8&pno=19'>
                                                     <img src="img/Decorations/Colored_balloons.jpg" alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                         </div>
                                 </div>
-                                <a href='index.php?cmd=8' class='invisible'>
+                                <a href='index.php?cmd=8&pno=19' class='invisible'>
                                     <img src='img/Decorations/Colored_balloons.jpg' alt='' class='img-responsive'>
                                 </a>
                                     <div class='text'>
                                         <h3>
-                                        <a href='index.php?cmd=8&pno=0.50'>Colored Balloons </a></h3>
+                                        <a href='index.php?cmd=8&pno=19'>Colored Balloons </a></h3>
                                         <p class='price'> ¢ 0.50</p>
                                         <p class='buttons'>
                                         <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
@@ -491,23 +491,23 @@ function content_5904ceb58685f7_56227614 (Smarty_Internal_Template $_smarty_tpl)
                                         <div class='flip-container'>
                                         <div class='flipper'>
                                             <div class='front'>
-                                                <a href='index.php?cmd=8&pno=6.50'>
+                                                <a href='index.php?cmd=8&pno=20'>
                                                     <img src=img/Decorations/confetti.jpg  alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                             <div class='back'>
-                                                <a href='index.php?cmd=8&pno='+6.50>
+                                                <a href='index.php?cmd=8&pno=20'>
                                                     <img src="img/Decorations/confetti.jpg" alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                         </div>
                                 </div>
-                                <a href='index.php?cmd=8' class='invisible'>
+                                <a href='index.php?cmd=8&pno=20' class='invisible'>
                                     <img src='img/Decorations/confetti.jpg' alt='' class='img-responsive'>
                                 </a>
                                     <div class='text'>
                                         <h3>
-                                        <a href='index.php?cmd=8&pno=6.50'>Confetti </a></h3>
+                                        <a href='index.php?cmd=8&pno=20'>Confetti </a></h3>
                                         <p class='price'> ¢ 6.50</p>
                                         <p class='buttons'>
                                         <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
@@ -525,23 +525,23 @@ function content_5904ceb58685f7_56227614 (Smarty_Internal_Template $_smarty_tpl)
                                         <div class='flip-container'>
                                         <div class='flipper'>
                                             <div class='front'>
-                                                <a href='index.php?cmd=8&pno=45.00'>
+                                                <a href='index.php?cmd=8&pno=21'>
                                                     <img src=img/Decorations/festive_grids.jpg  alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                             <div class='back'>
-                                                <a href='index.php?cmd=8&pno='+45.00>
+                                                <a href='index.php?cmd=8&pno=21'>
                                                     <img src="img/Decorations/festive_grids.jpg" alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                         </div>
                                 </div>
-                                <a href='index.php?cmd=8' class='invisible'>
+                                <a href='index.php?cmd=8&pno=21' class='invisible'>
                                     <img src='img/Decorations/festive_grids.jpg' alt='' class='img-responsive'>
                                 </a>
                                     <div class='text'>
                                         <h3>
-                                        <a href='index.php?cmd=8&pno=45.00'>Festive grids </a></h3>
+                                        <a href='index.php?cmd=8&pno=21'>Festive grids </a></h3>
                                         <p class='price'> ¢ 45.00</p>
                                         <p class='buttons'>
                                         <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
@@ -559,23 +559,23 @@ function content_5904ceb58685f7_56227614 (Smarty_Internal_Template $_smarty_tpl)
                                         <div class='flip-container'>
                                         <div class='flipper'>
                                             <div class='front'>
-                                                <a href='index.php?cmd=8&pno=4.50'>
+                                                <a href='index.php?cmd=8&pno=22'>
                                                     <img src=img/Decorations/Plain_silkBalloons.jpg  alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                             <div class='back'>
-                                                <a href='index.php?cmd=8&pno='+4.50>
+                                                <a href='index.php?cmd=8&pno=22'>
                                                     <img src="img/Decorations/Plain_silkBalloons.jpg" alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                         </div>
                                 </div>
-                                <a href='index.php?cmd=8' class='invisible'>
+                                <a href='index.php?cmd=8&pno=22' class='invisible'>
                                     <img src='img/Decorations/Plain_silkBalloons.jpg' alt='' class='img-responsive'>
                                 </a>
                                     <div class='text'>
                                         <h3>
-                                        <a href='index.php?cmd=8&pno=4.50'>Silk Balloons </a></h3>
+                                        <a href='index.php?cmd=8&pno=22'>Silk Balloons </a></h3>
                                         <p class='price'> ¢ 4.50</p>
                                         <p class='buttons'>
                                         <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
@@ -593,23 +593,23 @@ function content_5904ceb58685f7_56227614 (Smarty_Internal_Template $_smarty_tpl)
                                         <div class='flip-container'>
                                         <div class='flipper'>
                                             <div class='front'>
-                                                <a href='index.php?cmd=8&pno=1.50'>
+                                                <a href='index.php?cmd=8&pno=23'>
                                                     <img src=img/Decorations/shaped_balloons.jpg  alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                             <div class='back'>
-                                                <a href='index.php?cmd=8&pno='+1.50>
+                                                <a href='index.php?cmd=8&pno=23'>
                                                     <img src="img/Decorations/shaped_balloons.jpg" alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                         </div>
                                 </div>
-                                <a href='index.php?cmd=8' class='invisible'>
+                                <a href='index.php?cmd=8&pno=23' class='invisible'>
                                     <img src='img/Decorations/shaped_balloons.jpg' alt='' class='img-responsive'>
                                 </a>
                                     <div class='text'>
                                         <h3>
-                                        <a href='index.php?cmd=8&pno=1.50'>Shaped Ballons </a></h3>
+                                        <a href='index.php?cmd=8&pno=23'>Shaped Ballons </a></h3>
                                         <p class='price'> ¢ 1.50</p>
                                         <p class='buttons'>
                                         <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
@@ -627,23 +627,23 @@ function content_5904ceb58685f7_56227614 (Smarty_Internal_Template $_smarty_tpl)
                                         <div class='flip-container'>
                                         <div class='flipper'>
                                             <div class='front'>
-                                                <a href='index.php?cmd=8&pno=12.50'>
+                                                <a href='index.php?cmd=8&pno=24'>
                                                     <img src=img/Decorations/party_confetti.png  alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                             <div class='back'>
-                                                <a href='index.php?cmd=8&pno='+12.50>
+                                                <a href='index.php?cmd=8&pno=24'>
                                                     <img src="img/Decorations/party_confetti.png" alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                         </div>
                                 </div>
-                                <a href='index.php?cmd=8' class='invisible'>
+                                <a href='index.php?cmd=8&pno=24' class='invisible'>
                                     <img src='img/Decorations/party_confetti.png' alt='' class='img-responsive'>
                                 </a>
                                     <div class='text'>
                                         <h3>
-                                        <a href='index.php?cmd=8&pno=12.50'>Colored confetti </a></h3>
+                                        <a href='index.php?cmd=8&pno=24'>Colored confetti </a></h3>
                                         <p class='price'> ¢ 12.50</p>
                                         <p class='buttons'>
                                         <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>

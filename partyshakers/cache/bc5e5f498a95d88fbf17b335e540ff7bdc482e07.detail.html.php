@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 19:11:09
+/* Smarty version 3.1.30, created on 2017-04-29 23:02:09
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\detail.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904c92d6e43d2_51851712',
+  'unifunc' => 'content_5904ff5148bbb9_70622898',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fdde0e5d4a2a458b88cf7cce41812849295d138e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\detail.html',
-      1 => 1493485846,
+      1 => 1493499722,
       2 => 'file',
     ),
     '424622e207a164a5011b2c22ff94a5bb0cf5df33' => 
@@ -24,13 +24,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
-      1 => 1492817977,
+      1 => 1493498952,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_5904c92d6e43d2_51851712 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5904ff5148bbb9_70622898 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
  <!DOCTYPE html>
 <html lang="en">
@@ -375,15 +375,11 @@ function content_5904c92d6e43d2_51851712 (Smarty_Internal_Template $_smarty_tpl)
                     <ul class="breadcrumb">
                         <li><a href="index.html">Home</a>
                         </li>
-                        <li><br />
-<b>Notice</b>:  Undefined index: category in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>40</b><br />
-<br />
-<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>40</b><br />
-</li>
+                        <li>Decorations</li>
 
-                      
 
-                        <li></li>
+
+                        <li>Colored Balloons</li>
                     </ul>
 
                 </div>
@@ -431,17 +427,7 @@ function content_5904c92d6e43d2_51851712 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="col-sm-6">
                             <div id="mainImage">
 
-                                <img src= /*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo '<?php'; ?>
- echo '<?php echo '<?php'; ?>
- ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/echo "<br />
-<b>Notice</b>:  Undefined index: row in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>95</b><br />
-<br />
-<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>95</b><br />
-" /*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo '<?php'; ?>
- echo '<?php echo '?>'; ?>
-';<?php echo '?>'; ?>
-/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/ alt="" class="img-responsive">
+                                <img src= 'img/Decorations/Colored_balloons.jpg' alt="" class="img-responsive">
                             </div>
 
                             <div class="ribbon sale">
@@ -459,61 +445,53 @@ function content_5904c92d6e43d2_51851712 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                         <div class="col-sm-6">
                             <div class="box">
-                                <h1 class="text-center">/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo '<?php'; ?>
- echo '<?php echo '<?php'; ?>
- ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/echo "<br />
-<b>Notice</b>:  Undefined index: row in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>116</b><br />
-<br />
-<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>116</b><br />
-" /*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo '<?php'; ?>
- echo '<?php echo '?>'; ?>
-';<?php echo '?>'; ?>
-/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/</h1>
+                                <h1 class="text-center"><Colored Balloons></h1>
                                 <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details</a>
                                 </p>
-                                <p class="price">¢/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo '<?php'; ?>
- echo '<?php echo '<?php'; ?>
- ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/echo "<br />
-<b>Notice</b>:  Undefined index: row in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>122</b><br />
-<br />
-<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>122</b><br />
-" /*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo '<?php'; ?>
- echo '<?php echo '?>'; ?>
-';<?php echo '?>'; ?>
-/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/</p>
+                                <p class="price">¢0.50</p>
 
                                 <p class="text-center buttons">
-                                   /*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo '<?php'; ?>
- echo '<?php echo '<?php'; ?>
- ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/echo "<a  href='additem.php?cno=$cno&pno=<br />
-<b>Notice</b>:  Undefined index: row in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>128</b><br />
+                                     <a data-toggle='modal' data-target='#add-modal' data-pname = 'Colored Balloons' data-price = '0.50' data-pno = '<br />
+<b>Notice</b>:  Undefined index: itempno in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>123</b><br />
 <br />
-<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>128</b><br />
-&qty=1' data-toggle='modal' data-target='#add-modal' class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>"/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo '<?php'; ?>
- echo '<?php echo '?>'; ?>
-';<?php echo '?>'; ?>
-/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/
-                                    <a href="basket.html" class="btn btn-default"><i class="fa fa-heart"></i> Add to wishlist</a>
+<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>123</b><br />
+'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
+                                
+
+                                 <a href="basket.html" class="btn btn-default"><i class="fa fa-heart"></i> Add to wishlist</a>
                                 </p>
 
 
                             </div>
                         </div>
-                        
-                         <div class="modal fade" id="add-modal" tabindex="-1" role="dialog" aria-labelledby="Add" aria-hidden="true">
+                    <div class="modal fade" id="add-modal" tabindex="-1" role="dialog" aria-labelledby="Add" aria-hidden="true">
                         <div class="modal-dialog modal-sm">
 
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                   <h4 class="modal-title" id="Login"> <p class="text-center">One Item Added To Cart</h4>
+                                   <h4 class="modal-title" id="Login"> <p class="text-center">Confirm</h4>
+                                    
                                 </div>
                                 <div class="modal-body">
+                                    <div >
+                                        <input style ="border: none;" name="pno" id ="pno" hidden>
+                                 
+                                          <div> Product: <input style ="border: none;" name="pname" id ="name" > </div>
+                            
+                                         <div>Price : <input style = "border: none;" name="price" id ="price" > </div>
+
+                                         <div>  Quantity : <input type= 'number'  min="1" max="20"  placeholder='0' id ="qty" > </div>
+                                    </div>
+
+                                   <!--  <br></br> -->
+
+                                    <!-- <div id="divStatus"></div> -->
+
+
                                         <p class="text-center">
-                                            <button class="btn btn-primary" href="basket.php" name="login"><i class="fa fa-sign-in"></i>View Cart</button>
+                                            <button  onclick = "addtocart()" class="btn btn-primary" href="basket.php" name="addtocart"><i class="fa fa-sign-in"></i>Add to Cart</button>
+                                            <button class="btn btn-primary" href="basket.php" name="viewcart"><i class="fa fa-sign-in"></i>View Cart</button>
                                         </p>
                                 </div>
                             </div>
@@ -526,17 +504,7 @@ function content_5904c92d6e43d2_51851712 (Smarty_Internal_Template $_smarty_tpl)
                     <div class="box" id="details">
                         <p>
                             <h4>Product details</h4>
-                            <p>/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo '<?php'; ?>
- echo '<?php echo '<?php'; ?>
- ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/echo "<br />
-<b>Notice</b>:  Undefined index: row in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>162</b><br />
-<br />
-<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>162</b><br />
-" /*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo '<?php'; ?>
- echo '<?php echo '?>'; ?>
-';<?php echo '?>'; ?>
-/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/</p>
+                            <p>Colors available vary from pink, orange, blue, red, yellow and purple.</p>
 
                             <hr>
                             <div class="social">
@@ -549,6 +517,7 @@ function content_5904c92d6e43d2_51851712 (Smarty_Internal_Template $_smarty_tpl)
                                 </p>
                             </div>
                     </div>
+                
 
                 </div>
                 <!-- /.col-md-9 -->
@@ -779,8 +748,14 @@ function content_5904c92d6e43d2_51851712 (Smarty_Internal_Template $_smarty_tpl)
                      }
          }
 
-         function deleteitem(){
+         function deleteitem($id){
+
+
            
+         }
+
+         function deleteitemcomplete(){
+
          }
 
        // function subtotal(){

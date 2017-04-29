@@ -217,8 +217,14 @@
                      }
          }
 
-         function deleteitem(){
+         function deleteitem($id){
+
+
            
+         }
+
+         function deleteitemcomplete(){
+
          }
 
        // function subtotal(){

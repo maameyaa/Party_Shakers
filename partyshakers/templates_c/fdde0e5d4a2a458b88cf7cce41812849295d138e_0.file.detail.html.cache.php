@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 19:11:09
+/* Smarty version 3.1.30, created on 2017-04-29 23:02:08
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\detail.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904c92d14c540_45838268',
+  'unifunc' => 'content_5904ff50ad7ab0_64077141',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fdde0e5d4a2a458b88cf7cce41812849295d138e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\detail.html',
-      1 => 1493485846,
+      1 => 1493499722,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5904c92d14c540_45838268 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '118835904c92d032be3_83332009';
+function content_5904ff50ad7ab0_64077141 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '130495904ff50843291_37442950';
 ?>
  <?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -37,12 +37,12 @@ $_smarty_tpl->compiled->nocache_hash = '118835904c92d032be3_83332009';
                     <ul class="breadcrumb">
                         <li><a href="index.html">Home</a>
                         </li>
-                        <li><?php echo $_smarty_tpl->tpl_vars['category']->value;?>
+                        <li><?php echo $_smarty_tpl->tpl_vars['itemcategory']->value;?>
 </li>
 
-                      
 
-                        <li><?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
+
+                        <li><?php echo $_smarty_tpl->tpl_vars['itemname']->value;?>
 </li>
                     </ul>
 
@@ -91,10 +91,8 @@ $_smarty_tpl->compiled->nocache_hash = '118835904c92d032be3_83332009';
                         <div class="col-sm-6">
                             <div id="mainImage">
 
-                                <img src= <?php echo '/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo \'<?php \';?>/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/';?>
-echo "<?php echo $_smarty_tpl->tpl_vars['row']->value['image'];?>
-" <?php echo '/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo \'?>\';?>/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/';?>
- alt="" class="img-responsive">
+                                <img src= '<?php echo $_smarty_tpl->tpl_vars['itemimage']->value;?>
+' alt="" class="img-responsive">
                             </div>
 
                             <div class="ribbon sale">
@@ -112,40 +110,54 @@ echo "<?php echo $_smarty_tpl->tpl_vars['row']->value['image'];?>
                         </div>
                         <div class="col-sm-6">
                             <div class="box">
-                                <h1 class="text-center"><?php echo '/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo \'<?php \';?>/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/';?>
-echo "<?php echo $_smarty_tpl->tpl_vars['row']->value['pname'];?>
-" <?php echo '/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo \'?>\';?>/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/';?>
-</h1>
+                                <h1 class="text-center"><<?php echo $_smarty_tpl->tpl_vars['itemname']->value;?>
+></h1>
                                 <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details</a>
                                 </p>
-                                <p class="price">¢<?php echo '/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo \'<?php \';?>/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/';?>
-echo "<?php echo $_smarty_tpl->tpl_vars['row']->value['price'];?>
-" <?php echo '/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo \'?>\';?>/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/';?>
+                                <p class="price">¢<?php echo $_smarty_tpl->tpl_vars['itemprice']->value;?>
 </p>
 
                                 <p class="text-center buttons">
-                                   <?php echo '/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo \'<?php \';?>/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/';?>
-echo "<a  href='additem.php?cno=$cno&pno=<?php echo $_smarty_tpl->tpl_vars['row']->value['pno'];?>
-&qty=1' data-toggle='modal' data-target='#add-modal' class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>"<?php echo '/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo \'?>\';?>/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/';?>
+                                     <a data-toggle='modal' data-target='#add-modal' data-pname = '<?php echo $_smarty_tpl->tpl_vars['itemname']->value;?>
+' data-price = '<?php echo $_smarty_tpl->tpl_vars['itemprice']->value;?>
+' data-pno = '<?php echo $_smarty_tpl->tpl_vars['itempno']->value;?>
+'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
+                                
 
-                                    <a href="basket.html" class="btn btn-default"><i class="fa fa-heart"></i> Add to wishlist</a>
+                                 <a href="basket.html" class="btn btn-default"><i class="fa fa-heart"></i> Add to wishlist</a>
                                 </p>
 
 
                             </div>
                         </div>
-                        
-                         <div class="modal fade" id="add-modal" tabindex="-1" role="dialog" aria-labelledby="Add" aria-hidden="true">
+                    <div class="modal fade" id="add-modal" tabindex="-1" role="dialog" aria-labelledby="Add" aria-hidden="true">
                         <div class="modal-dialog modal-sm">
 
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                   <h4 class="modal-title" id="Login"> <p class="text-center">One Item Added To Cart</h4>
+                                   <h4 class="modal-title" id="Login"> <p class="text-center">Confirm</h4>
+                                    
                                 </div>
                                 <div class="modal-body">
+                                    <div >
+                                        <input style ="border: none;" name="pno" id ="pno" hidden>
+                                 
+                                          <div> Product: <input style ="border: none;" name="pname" id ="name" > </div>
+                            
+                                         <div>Price : <input style = "border: none;" name="price" id ="price" > </div>
+
+                                         <div>  Quantity : <input type= 'number'  min="1" max="20"  placeholder='0' id ="qty" > </div>
+                                    </div>
+
+                                   <!--  <br></br> -->
+
+                                    <!-- <div id="divStatus"></div> -->
+
+
                                         <p class="text-center">
-                                            <button class="btn btn-primary" href="basket.php" name="login"><i class="fa fa-sign-in"></i>View Cart</button>
+                                            <button  onclick = "addtocart()" class="btn btn-primary" href="basket.php" name="addtocart"><i class="fa fa-sign-in"></i>Add to Cart</button>
+                                            <button class="btn btn-primary" href="basket.php" name="viewcart"><i class="fa fa-sign-in"></i>View Cart</button>
                                         </p>
                                 </div>
                             </div>
@@ -158,9 +170,7 @@ echo "<a  href='additem.php?cno=$cno&pno=<?php echo $_smarty_tpl->tpl_vars['row'
                     <div class="box" id="details">
                         <p>
                             <h4>Product details</h4>
-                            <p><?php echo '/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo \'<?php \';?>/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/';?>
-echo "<?php echo $_smarty_tpl->tpl_vars['row']->value['description'];?>
-" <?php echo '/*%%SmartyNocache:118835904c92d032be3_83332009%%*/<?php echo \'?>\';?>/*/%%SmartyNocache:118835904c92d032be3_83332009%%*/';?>
+                            <p><?php echo $_smarty_tpl->tpl_vars['itemdescription']->value;?>
 </p>
 
                             <hr>
@@ -174,6 +184,7 @@ echo "<?php echo $_smarty_tpl->tpl_vars['row']->value['description'];?>
                                 </p>
                             </div>
                     </div>
+                
 
                 </div>
                 <!-- /.col-md-9 -->

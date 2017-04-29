@@ -91,23 +91,23 @@
                                         <div class='flip-container'>
                                         <div class='flipper'>
                                             <div class='front'>
-                                                <a href='index.php?cmd=8&pno={$item.price}'>
+                                                <a href='index.php?cmd=8&pno={$item.pno}'>
                                                     <img src={$item.image}  alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                             <div class='back'>
-                                                <a href='index.php?cmd=8&pno='+{$item.price}>
+                                                <a href='index.php?cmd=8&pno={$item.pno}'>
                                                     <img src="{$item.image}" alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                         </div>
                                 </div>
-                                <a href='index.php?cmd=8' class='invisible'>
+                                <a href='index.php?cmd=8&pno={$item.pno}' class='invisible'>
                                     <img src='{$item.image}' alt='' class='img-responsive'>
                                 </a>
                                     <div class='text'>
                                         <h3>
-                                        <a href='index.php?cmd=8&pno={$item.price}'>{$item.pname} </a></h3>
+                                        <a href='index.php?cmd=8&pno={$item.pno}'>{$item.pname} </a></h3>
                                         <p class='price'> ¢ {$item.price}</p>
                                         <p class='buttons'>
                                         <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>

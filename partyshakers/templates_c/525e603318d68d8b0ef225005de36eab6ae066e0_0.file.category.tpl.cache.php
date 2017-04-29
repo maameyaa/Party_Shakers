@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 19:34:45
+/* Smarty version 3.1.30, created on 2017-04-29 20:31:19
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\category.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904ceb5195c34_71720177',
+  'unifunc' => 'content_5904dbf73d68c5_18105201',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '525e603318d68d8b0ef225005de36eab6ae066e0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\category.tpl',
-      1 => 1493485404,
+      1 => 1493489363,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_5904ceb5195c34_71720177 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '159885904ceb4725861_25396836';
+function content_5904dbf73d68c5_18105201 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '22825904dbf725ff49_97055018';
 ?>
  <?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -125,28 +125,29 @@ foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
                                         <div class='flip-container'>
                                         <div class='flipper'>
                                             <div class='front'>
-                                                <a href='index.php?cmd=8&pno=<?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
+                                                <a href='index.php?cmd=8&pno=<?php echo $_smarty_tpl->tpl_vars['item']->value['pno'];?>
 '>
                                                     <img src=<?php echo $_smarty_tpl->tpl_vars['item']->value['image'];?>
   alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                             <div class='back'>
-                                                <a href='index.php?cmd=8&pno='+<?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
->
+                                                <a href='index.php?cmd=8&pno=<?php echo $_smarty_tpl->tpl_vars['item']->value['pno'];?>
+'>
                                                     <img src="<?php echo $_smarty_tpl->tpl_vars['item']->value['image'];?>
 " alt='' class='img-responsive'>
                                                 </a>
                                             </div>
                                         </div>
                                 </div>
-                                <a href='index.php?cmd=8' class='invisible'>
+                                <a href='index.php?cmd=8&pno=<?php echo $_smarty_tpl->tpl_vars['item']->value['pno'];?>
+' class='invisible'>
                                     <img src='<?php echo $_smarty_tpl->tpl_vars['item']->value['image'];?>
 ' alt='' class='img-responsive'>
                                 </a>
                                     <div class='text'>
                                         <h3>
-                                        <a href='index.php?cmd=8&pno=<?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
+                                        <a href='index.php?cmd=8&pno=<?php echo $_smarty_tpl->tpl_vars['item']->value['pno'];?>
 '><?php echo $_smarty_tpl->tpl_vars['item']->value['pname'];?>
  </a></h3>
                                         <p class='price'> ¢ <?php echo $_smarty_tpl->tpl_vars['item']->value['price'];?>
