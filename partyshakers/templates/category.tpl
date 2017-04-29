@@ -132,6 +132,11 @@
                                    <h4 class="modal-title" id="Login"> <p class="text-center">Confirm</h4>
                                     
                                 </div>
+
+                                {if !$name}
+
+                                        <center><p>Plese log in to add an item. Thanks!</p></center>
+                                {else}
                                 <div class="modal-body">
                                     <div >
                                         <input style ="border: none;" name="pno" id ="pno" hidden>
@@ -149,10 +154,17 @@
 
 
                                         <p class="text-center">
+
+
+
+                                        
+
                                             <button  onclick = "addtocart()" class="btn btn-primary" href="basket.php" name="addtocart"><i class="fa fa-sign-in"></i>Add to Cart</button>
-                                            <button class="btn btn-primary" href="basket.php" name="viewcart"><i class="fa fa-sign-in"></i>View Cart</button>
+                                             <a class="btn btn-primary" name="viewcart" href="index.php?cmd=7"><i class="fa fa-sign-in"></i>View Cart</a>
+                                       
                                         </p>
                                 </div>
+                                 {/if}
                             </div>
                         </div>
                     </div>

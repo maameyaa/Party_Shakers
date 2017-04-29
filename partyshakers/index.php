@@ -14,6 +14,10 @@ if(isset($_SESSION['name'])){
 	$smarty->assign("name", $name);
 }
 
+else{
+	$smarty->assign("name");
+}
+
 $smarty->assign("itemsincart", 0);
 
 
@@ -141,6 +145,8 @@ if(!isset($_REQUEST['cmd'])){
 
 	        $row = $obj->fetch();
 
+	        $pno = $row['pno'];
+
 			$image = $row['image'];
 
 			$name = $row['pname'];
@@ -150,12 +156,12 @@ if(!isset($_REQUEST['cmd'])){
 			$description = $row['description'];
 
 			$category = $row['category'];
-			
+
+			$smarty->assign("itempno", $pno);
 			$smarty->assign("itemimage", $image);
 			$smarty->assign("itemname", $name);
 			$smarty->assign("itemprice", $price);
-			$smarty->assign("
-				", $description); 
+			$smarty->assign("itemdescription", $description); 
 			$smarty->assign("itemcategory", $category); 
 
 

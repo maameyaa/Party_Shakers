@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 23:34:24
+/* Smarty version 3.1.30, created on 2017-04-30 01:32:08
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\detail.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_590506e0dd3137_09141412',
+  'unifunc' => 'content_59052278912a39_71023120',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fdde0e5d4a2a458b88cf7cce41812849295d138e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\detail.html',
-      1 => 1493499764,
+      1 => 1493508707,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_590506e0dd3137_09141412 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '12016590506e0c83089_86464426';
+function content_59052278912a39_71023120 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '32660590522788260d3_50903136';
 ?>
  <?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -60,16 +60,16 @@ $_smarty_tpl->compiled->nocache_hash = '12016590506e0c83089_86464426';
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked category-menu">
                                 <li>
-                                    <a href="category.php?category=Decorations">Decorations</a>
+                                    <a href="index.php?cmd=5&category=Decorations">Decorations</a>
                                 </li>
                                 <li>
-                                    <a href="category.php?category=Costume">Costumes</a>
+                                    <a href="index.php?cmd=5&category=Costume">Costumes</a>
                                 </li>
                                 <li>
-                                    <a href="category.php?category=Food">Food & Drinks</a>
+                                    <a href="index.php?cmd=5&category=Food">Food & Drinks</a>
                                 </li>
                                 <li>
-                                    <a href="category.php?category=Utensils">Tableware</a>
+                                    <a href="index.php?cmd=5&category=Utensils">Tableware</a>
                                 </li>
 
                             </ul>
@@ -139,6 +139,10 @@ $_smarty_tpl->compiled->nocache_hash = '12016590506e0c83089_86464426';
                                    <h4 class="modal-title" id="Login"> <p class="text-center">Confirm</h4>
                                     
                                 </div>
+                                <?php if (!$_smarty_tpl->tpl_vars['name']->value) {?>
+
+                                        <center><p>Plese log in to add an item. Thanks!</p></center>
+                                <?php } else { ?>
                                 <div class="modal-body">
                                     <div >
                                         <input style ="border: none;" name="pno" id ="pno" hidden>
@@ -157,9 +161,11 @@ $_smarty_tpl->compiled->nocache_hash = '12016590506e0c83089_86464426';
 
                                         <p class="text-center">
                                             <button  onclick = "addtocart()" class="btn btn-primary" href="basket.php" name="addtocart"><i class="fa fa-sign-in"></i>Add to Cart</button>
-                                            <button class="btn btn-primary" href="basket.php" name="viewcart"><i class="fa fa-sign-in"></i>View Cart</button>
-                                        </p>
+
+                                            <a class="btn btn-primary" name="viewcart" href="index.php?cmd=7"><i class="fa fa-sign-in"></i>View Cart</a>
+                                        </p>  
                                 </div>
+                                <?php }?>
                             </div>
                         </div>
                     </div>

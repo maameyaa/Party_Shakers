@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-30 01:32:00
-  from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\basket.html" */
+/* Smarty version 3.1.30, created on 2017-04-30 00:52:38
+  from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\index.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59052270d2db23_58471037',
+  'unifunc' => 'content_59051936189078_27238422',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '34631b9ecd1847b12db2f68e46a20809aff24e81' => 
+    '424f26068afba00913ff3cf91762dd66649ff071' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\basket.html',
-      1 => 1493503143,
+      0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\index.tpl',
+      1 => 1492101331,
       2 => 'file',
     ),
     '424622e207a164a5011b2c22ff94a5bb0cf5df33' => 
@@ -24,15 +24,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
-      1 => 1493506974,
+      1 => 1493505789,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59051936189078_27238422 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -131,7 +131,8 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <div class="col-md-6" data-animate="fadeInDown">
                 <ul class="menu">
-                                        <li ><div><a href="#" data-toggle="modal" data-target="#logout-modal">Maame Yaa </a></div>
+                     
+                     <li ><div><a href="#" data-toggle="modal" data-target="#login-modal">login</a></div>
                       
                     </li>
                     <li><a href="index.php?cmd=2">Register</a>
@@ -369,161 +370,295 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
     <div id="all">
 
         <div id="content">
+
             <div class="container">
-
                 <div class="col-md-12">
-                    <ul class="breadcrumb">
-                        <li><a href="index.html">Home</a>
-                        </li>
-                        <li>Shopping cart</li>
-                    </ul>
+                    <div id="main-slider">
+                        <div class="item">
+                            <img src="img/main-slider1.jpg" alt="" class="img-responsive">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/main-slider2.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/main-slider3.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/main-slider4.jpg" alt="">
+                        </div>
+                    </div>
+                    <!-- /#main-slider -->
                 </div>
+            </div>
 
-                <div class="col-md-9" id="basket">
+            <!-- *** ADVANTAGES HOMEPAGE ***
+ _________________________________________________________ -->
+            <div id="advantages">
 
-                    <div class="box">
-                            <h1>Shopping cart</h1>
-                            <p class="text-muted">You currently have 
-                               <!--  /*%%SmartyNocache:3841590522705c6784_27417689%%*/<?php echo '<?php'; ?>
- echo '<?php echo '<?php'; ?>
-
-                                    ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:3841590522705c6784_27417689%%*/include_once("orders.php");
-                                    $obj=new orders(); 
-                                    $s=$obj->countItems($_SESSION['cno']);
-                                    echo $s;
-                                /*%%SmartyNocache:3841590522705c6784_27417689%%*/<?php echo '<?php'; ?>
- echo '<?php echo '?>'; ?>
-';<?php echo '?>'; ?>
-/*/%%SmartyNocache:3841590522705c6784_27417689%%*/ --> 
-                                item(s) in your cart.</p>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th ></th>
-                                            <th >Product</th>
-                                            <th>Quantity</th>
-                                            <th>Unit price</th>
-                                            <th>Total Amount</th>
-                                            <th>Remove Item</th>
-                                            
-                                        </tr>
-                                    </thead>
-                                    <tbody> 
-                                           
-                                        <tr>
-                                            <th> 1</th>
-                                            <p hidden> <input type= 'number' id ="tableid" value = 1 > </p>
-                                            <td>Festive grids</td>
-                                            <td><input type='number' value= 0 onclick= "subtotal()" ></td>
-                                            <td>45.00</td>
-                                            <td class='subtotal'></td>
-                                            <td><a  onclick = "deleteitem('65')" ><i class='fa fa-trash-o'></i></a></td> 
-                                        </tr>
-                                           
-                                        <tr>
-                                            <th> 2</th>
-                                            <p hidden> <input type= 'number' id ="tableid" value = 2 > </p>
-                                            <td>Confetti</td>
-                                            <td><input type='number' value= 1 onclick= "subtotal()" ></td>
-                                            <td>6.50</td>
-                                            <td class='subtotal'></td>
-                                            <td><a  onclick = "deleteitem('66')" ><i class='fa fa-trash-o'></i></a></td> 
-                                        </tr>
-                                     
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <th colspan="5">Total</th>
-                                            <th colspan="2"></th>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-
-                            </div>
-                            <!-- /.table-responsive -->
-
-                            <div class="box-footer">
-                                <div class="pull-left">
-                                    <a href="category.html" class="btn btn-default"><i class="fa fa-chevron-left"></i> Continue shopping</a>
+                <div class="container">
+                    <div class="same-height-row">
+                        <div class="col-sm-4">
+                            <div class="box same-height clickable">
+                                <div class="icon"><i class="fa fa-heart"></i>
                                 </div>
-                                <div class="pull-right">
-                                    <button class="btn btn-default"><i class="fa fa-refresh"></i> Update basket</button>
-                                    
-                                    <a href='addorder.php'  class='btn btn-primary'>Place Order <i class='fa fa-chevron-right'></i>                                        
-                                    </a>
+
+                                <h3><a href="#">Decorations</a></h3>
+                                <p>We are known to provide best possible service ever</p>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="box same-height clickable">
+                                <div class="icon"><i class="fa fa-tags"></i>
                                 </div>
+
+                                <h3><a href="#">Food</a></h3>
+                                <p>You can check that the height of the boxes adjust when longer text like this one is used in one of them.</p>
                             </div>
-
-                    </div>
-                    <!-- /.box -->
-
-                    </div>
-                <!-- /.col-md-9 -->
-
-                <div class="col-md-3">
-                    <div class="box" id="order-summary">
-                        <div class="box-header">
-                            <h3>Order summary</h3>
-                        </div>
-                        <p class="text-muted">Shipping and additional costs are calculated based on the values you have entered.</p>
-
-                        <div class="table-responsive">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>Order subtotal</td>
-                                        <th></th>
-                                    </tr>
-                                    <tr>
-                                        <td>Shipping and handling</td>
-                                        <th></th>
-                                    </tr>
-                                    <tr>
-                                        <td>Tax</td>
-                                        <th></th>
-                                    </tr>
-                                    <tr class="total">
-                                        <td>Total</td>
-                                        <th></th>
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
 
-                    </div>
+                        <div class="col-sm-4">
+                            <div class="box same-height clickable">
+                                <div class="icon"><i class="fa fa-thumbs-up"></i>
+                                </div>
 
-
-                    <div class="box">
-                        <div class="box-header">
-                            <h4>Coupon code</h4>
-                        </div>
-                        <p class="text-muted">If you have a coupon code, please enter it in the box below.</p>
-                        <form>
-                            <div class="input-group">
-
-                                <input type="text" class="form-control">
-
-                                <span class="input-group-btn">
-
-                    <button class="btn btn-primary" type="button"><i class="fa fa-gift"></i></button>
-
-                    </span>
+                                <h3><a href="#">Tableware</a></h3>
+                                <p>Free returns on everything for 3 months.</p>
                             </div>
-                            <!-- /input-group -->
-                        </form>
+                        </div>
                     </div>
+                    <!-- /.row -->
 
                 </div>
-                <!-- /.col-md-3 -->
+                <!-- /.container -->
 
             </div>
-            <!-- /.container -->
-        </div>
-        <!-- /#content -->
+            <!-- /#advantages -->
 
-           <!-- *** FOOTER ***
+            <!-- *** ADVANTAGES END *** -->
+
+            <!-- *** HOT PRODUCT SLIDESHOW ***
+ _________________________________________________________ -->
+            <div id="hot">
+
+                <div class="box">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <h2>Hot deals this week</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="product-slider">
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/Decorations/festive_balloons.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/Decorations/festive_balloons.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/Decorations/festive_balloons.jpg"  alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="detail.html">Festive Balloons </a></h3>
+                                    <p class="price">¢15.00</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/Candy_Land/alewa.jpg" alt="" class="img-responsive" height="598" width="550">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/Candy_Land/alewa.jpg"alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/Candy_Land/alewa.jpg"  alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="detail.html">Alewa</a></h3>
+                                    <p class="price"><del>¢10.00</del> ¢5.00</p>
+                                </div>
+                                <!-- /.text -->
+
+                                <div class="ribbon sale">
+                                    <div class="theribbon">SALE</div>
+                                    <div class="ribbon-background"></div>
+                                </div>
+                                <!-- /.ribbon -->
+
+                                <div class="ribbon new">
+                                    <div class="theribbon">NEW</div>
+                                    <div class="ribbon-background"></div>
+                                </div>
+                                <!-- /.ribbon -->
+
+                                <div class="ribbon gift">
+                                    <div class="theribbon">GIFT</div>
+                                    <div class="ribbon-background"></div>
+                                </div>
+                                <!-- /.ribbon -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/Decorations/festive_grids.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/Decorations/festive_grids.jpg"alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/Decorations/festive_grids.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="detail.html">Festive Grids</a></h3>
+                                    <p class="price">¢2.00</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/Party_Utensils/Color_cups.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/Party_Utensils/Color_cups.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/Party_Utensils/Color_cups.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="detail.html">Party Cups</a></h3>
+                                    <p class="price">¢10.00</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="item">
+                            <div class="product">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/Party_Utensils/Party_napkins.jpg" alt="" class="img-responsive" >
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/Party_Utensils/Party_napkins.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/Party_Utensils/Party_napkins.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3><a href="detail.html">Papper Napkins</a></h3>
+                                    <p class="price">¢6.00</p>
+                                </div>
+                                <!-- /.text -->
+
+                                <div class="ribbon new">
+                                    <div class="theribbon">NEW</div>
+                                    <div class="ribbon-background"></div>
+                                </div>
+                                <!-- /.ribbon -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+        
+
+                    </div>
+                    <!-- /.product-slider -->
+                </div>
+                <!-- /.container -->
+
+            </div>
+            <!-- /#hot -->
+
+            <!-- *** HOT END *** -->
+
+            <!-- *** GET INSPIRED ***
+ _________________________________________________________ -->
+            <div class="container" data-animate="fadeInUpBig">
+                <div class="col-md-12">
+                    <div class="box slideshow">
+                        <h3>Get Inspired</h3>
+                        <p class="lead">Get the inspiration from our world class party organizers</p>
+                        <div id="get-inspired" class="owl-carousel owl-theme">
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/getinspired1.jpg" alt="Get inspired" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/getinspired2.jpg" alt="Get inspired" class="img-responsive">
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="#">
+                                    <img src="img/getinspired3.jpg" alt="Get inspired" class="img-responsive">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- *** GET INSPIRED END *** -->
+
+            <!-- *** BLOG HOMEPAGE ***
+ _________________________________________________________ -->
+         <!-- *** FOOTER ***
  _________________________________________________________ -->
         <div id="footer" data-animate="fadeInUp">
             <div class="container">
@@ -703,6 +838,14 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
 
          function addtocart(){
 
+            var login = ;
+
+            if(!login){
+                alert('Please login to add items to your cart. Thanks!');
+
+                return;
+            }
+
 
              var pno = $('#pno').val();
              var qty = $('#qty').val();
@@ -800,6 +943,10 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
    
 </body>
 
-</html> 
+</html>   
+            
+            
+
+
 <?php }
 }

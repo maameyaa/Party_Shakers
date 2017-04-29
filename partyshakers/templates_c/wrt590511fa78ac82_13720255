@@ -1,3 +1,28 @@
+<?php
+/* Smarty version 3.1.30, created on 2017-04-30 00:21:46
+  from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\footer.tpl" */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.30',
+  'unifunc' => 'content_590511fa7855f3_55468473',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
+      1 => 1493504476,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_590511fa7855f3_55468473 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '14722590511fa7443c5_03916064';
+?>
         <!-- *** FOOTER ***
  _________________________________________________________ -->
         <div id="footer" data-animate="fadeInUp">
@@ -153,16 +178,33 @@
 
     <!-- *** SCRIPTS TO INCLUDE ***
  _________________________________________________________ -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.cookie.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/bootstrap-hover-dropdown.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/front.js"></script>
+    <?php echo '<script'; ?>
+ src="js/jquery-1.11.0.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="js/bootstrap.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="js/jquery.cookie.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="js/waypoints.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="js/modernizr.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="js/bootstrap-hover-dropdown.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="js/owl.carousel.min.js"><?php echo '</script'; ?>
+>
+    <?php echo '<script'; ?>
+ src="js/front.js"><?php echo '</script'; ?>
+>
 
-    <script>
+    <?php echo '<script'; ?>
+>
 
          $('#add-modal').on('show.bs.modal', function(e) {
 
@@ -177,8 +219,6 @@
 
 
          function addtocart(){
-
-
              var pno = $('#pno').val();
              var qty = $('#qty').val();
 
@@ -187,9 +227,9 @@
 
              var ajaxPageUrl="cartajax.php?cmd=1&pno="+pno+"&qty="+qty;
                 
-                $.ajax(ajaxPageUrl, {literal}
+                $.ajax(ajaxPageUrl, 
                        {async:true, complete: addtocartcomplete});
-                       {/literal} 
+                        
             // alert("Added to cart");
          }
 
@@ -232,9 +272,9 @@
 
             ajaxPageUrl="cartajax.php?cmd=2&id="+id;
 
-              $.ajax(ajaxPageUrl, {literal}
+              $.ajax(ajaxPageUrl, 
                        {async:true, complete: deleteitemcomplete});
-                       {/literal} 
+                        
             //prompt('url',pageUrl);
 
            
@@ -255,7 +295,7 @@
                 alert("server response: "+obj.message);
             }else{
                 alert("Item has been removed.");
-                window.location=("index.php?cmd=7");
+                window.location=("inder.php?cmd7=");
             }
 
          }
@@ -270,9 +310,11 @@
        //         (subtotal);
 
        // }
-</script>
+<?php echo '</script'; ?>
+>
      
    
 </body>
 
-</html>
+</html><?php }
+}

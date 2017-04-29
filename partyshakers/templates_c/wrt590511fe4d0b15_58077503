@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-30 01:32:00
+/* Smarty version 3.1.30, created on 2017-04-30 00:21:50
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\basket.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59052270783860_95488267',
+  'unifunc' => 'content_590511fe4c4f88_23949893',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_59052270783860_95488267 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '3841590522705c6784_27417689';
+function content_590511fe4c4f88_23949893 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '18579590511fe396af3_51032582';
 ?>
   <?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -47,13 +47,13 @@ $_smarty_tpl->compiled->nocache_hash = '3841590522705c6784_27417689';
                     <div class="box">
                             <h1>Shopping cart</h1>
                             <p class="text-muted">You currently have 
-                               <!--  <?php echo '/*%%SmartyNocache:3841590522705c6784_27417689%%*/<?php echo \'<?php
-                                    \';?>/*/%%SmartyNocache:3841590522705c6784_27417689%%*/';?>
+                               <!--  <?php echo '/*%%SmartyNocache:18579590511fe396af3_51032582%%*/<?php echo \'<?php
+                                    \';?>/*/%%SmartyNocache:18579590511fe396af3_51032582%%*/';?>
 include_once("orders.php");
                                     $obj=new orders(); 
                                     $s=$obj->countItems($_SESSION['cno']);
                                     echo $s;
-                                <?php echo '/*%%SmartyNocache:3841590522705c6784_27417689%%*/<?php echo \'?>\';?>/*/%%SmartyNocache:3841590522705c6784_27417689%%*/';?>
+                                <?php echo '/*%%SmartyNocache:18579590511fe396af3_51032582%%*/<?php echo \'?>\';?>/*/%%SmartyNocache:18579590511fe396af3_51032582%%*/';?>
  --> 
                                 item(s) in your cart.</p>
                             <div class="table-responsive">

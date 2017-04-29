@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 23:33:55
+/* Smarty version 3.1.30, created on 2017-04-30 01:03:58
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\customer-orders.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_590506c395df43_36563328',
+  'unifunc' => 'content_59051bdea9b2e7_18423503',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -24,13 +24,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
-      1 => 1493500534,
+      1 => 1493506974,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_590506c395df43_36563328 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59051bdea9b2e7_18423503 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
  <!DOCTYPE html>
 <html lang="en">
@@ -441,9 +441,17 @@ function content_590506c395df43_36563328 (Smarty_Internal_Template $_smarty_tpl)
                                     
                                                                         <tr>
                                         <th>1</th>
-                                        <td>2017-04-21 17:26:14</td>
+                                        <td>2017-04-29 22:24:08</td>
                                         <td>0</td>
-                                        <td><span class="label label-info"></span>
+                                        <td><span class="label label-info">Being Prepared</span>
+                                        </td>
+                                        <td><a href="customer-order.html" class="btn btn-primary btn-sm">View</a>
+                                        </td>
+                                                                        <tr>
+                                        <th>1</th>
+                                        <td>2017-04-29 23:03:58</td>
+                                        <td>0</td>
+                                        <td><span class="label label-info">Being Prepared</span>
                                         </td>
                                         <td><a href="customer-order.html" class="btn btn-primary btn-sm">View</a>
                                         </td>
@@ -639,10 +647,12 @@ function content_590506c395df43_36563328 (Smarty_Internal_Template $_smarty_tpl)
 
 
          function addtocart(){
+
+
              var pno = $('#pno').val();
              var qty = $('#qty').val();
 
-             alert (qty);
+             //alert (qty);
 
 
              var ajaxPageUrl="cartajax.php?cmd=1&pno="+pno+"&qty="+qty;
@@ -683,11 +693,40 @@ function content_590506c395df43_36563328 (Smarty_Internal_Template $_smarty_tpl)
 
          function deleteitem($id){
 
+            var id =$id;
+
+            // var tableid = $('#tableid').val();
+
+            // alert(tableid);
+
+
+            ajaxPageUrl="cartajax.php?cmd=2&id="+id;
+
+              $.ajax(ajaxPageUrl, 
+                       {async:true, complete: deleteitemcomplete});
+                        
+            //prompt('url',pageUrl);
 
            
          }
 
-         function deleteitemcomplete(){
+         function deleteitemcomplete(xhr, status){
+
+          
+            if(status!="success"){
+                alert("status is "+status);
+                return;
+            }
+            
+            var obj = $.parseJSON(xhr.responseText);
+
+            if(obj.result==0){
+
+                alert("server response: "+obj.message);
+            }else{
+                alert("Item has been removed.");
+                window.location=("index.php?cmd=7");
+            }
 
          }
 

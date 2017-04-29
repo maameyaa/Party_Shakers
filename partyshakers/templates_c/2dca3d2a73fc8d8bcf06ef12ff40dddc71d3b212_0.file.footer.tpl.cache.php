@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 23:34:29
+/* Smarty version 3.1.30, created on 2017-04-30 01:32:09
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\footer.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_590506e510e694_13302711',
+  'unifunc' => 'content_5905227925eb64_60840810',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
-      1 => 1493500534,
+      1 => 1493506974,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_590506e510e694_13302711 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '17957590506e50afad2_03808423';
+function content_5905227925eb64_60840810 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '292345905227921c832_31322383';
 ?>
         <!-- *** FOOTER ***
  _________________________________________________________ -->
@@ -219,10 +219,12 @@ $_smarty_tpl->compiled->nocache_hash = '17957590506e50afad2_03808423';
 
 
          function addtocart(){
+
+
              var pno = $('#pno').val();
              var qty = $('#qty').val();
 
-             alert (qty);
+             //alert (qty);
 
 
              var ajaxPageUrl="cartajax.php?cmd=1&pno="+pno+"&qty="+qty;
@@ -263,11 +265,40 @@ $_smarty_tpl->compiled->nocache_hash = '17957590506e50afad2_03808423';
 
          function deleteitem($id){
 
+            var id =$id;
+
+            // var tableid = $('#tableid').val();
+
+            // alert(tableid);
+
+
+            ajaxPageUrl="cartajax.php?cmd=2&id="+id;
+
+              $.ajax(ajaxPageUrl, 
+                       {async:true, complete: deleteitemcomplete});
+                        
+            //prompt('url',pageUrl);
 
            
          }
 
-         function deleteitemcomplete(){
+         function deleteitemcomplete(xhr, status){
+
+          
+            if(status!="success"){
+                alert("status is "+status);
+                return;
+            }
+            
+            var obj = $.parseJSON(xhr.responseText);
+
+            if(obj.result==0){
+
+                alert("server response: "+obj.message);
+            }else{
+                alert("Item has been removed.");
+                window.location=("index.php?cmd=7");
+            }
 
          }
 

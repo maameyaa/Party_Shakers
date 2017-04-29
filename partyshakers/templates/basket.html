@@ -29,7 +29,8 @@
                                 <table class="table">
                                     <thead>
                                         <tr>
-                                            <th colspan="2">Product</th>
+                                            <th ></th>
+                                            <th >Product</th>
                                             <th>Quantity</th>
                                             <th>Unit price</th>
                                             <th>Total Amount</th>
@@ -40,7 +41,8 @@
                                     <tbody> 
                                      {foreach from=$cartitems item=item}      
                                         <tr>
-                                            <th></th>
+                                            <th>{$itemsincart = $itemsincart +1} {$itemsincart}</th>
+                                            <p hidden> <input type= 'number' id ="tableid" value = {$itemsincart} > </p>
                                             <td>{$item.pname}</td>
                                             <td><input type='number' value= {$item.qty} onclick= "subtotal()" ></td>
                                             <td>{$item.price}</td>

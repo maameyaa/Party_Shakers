@@ -3,7 +3,7 @@
 session_start();
 
   
-if(isset($_SESSION['cno'])){
+if(isset($_SESSION['ono'])){
 
     $cno=$_SESSION['cno'];
 

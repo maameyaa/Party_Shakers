@@ -18,6 +18,10 @@ include_once("orders.php");
 		case 1: 
 		addtocart();
 		break; 
+
+		case 2: 
+		deleteitem();
+		break; 
 	}
 
 
@@ -52,6 +56,23 @@ include_once("orders.php");
             
          
 	  }
+	}
+
+
+	function deleteitem(){
+
+		include_once("orders.php");
+		$obj = new orders();
+
+		$itemId = $_REQUEST['id'];
+
+		$result =$obj->deleteitem($itemId);
+		//var_dump($res);
+		if (!$result) {
+		echo '{"result":0 ,"message": "Failed to remove item."}';
+		}else{
+		echo '{"result":1, "message": "Item removed."}';
+		}
 	}
 
 

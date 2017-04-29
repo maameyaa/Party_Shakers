@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-30 01:32:00
+/* Smarty version 3.1.30, created on 2017-04-30 00:21:39
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\basket.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59052270d2db23_58471037',
+  'unifunc' => 'content_590511f391d3a6_64941799',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -24,13 +24,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
-      1 => 1493506974,
+      1 => 1493504476,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl) {
+function content_590511f391d3a6_64941799 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <!DOCTYPE html>
 <html lang="en">
@@ -384,18 +384,18 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
                     <div class="box">
                             <h1>Shopping cart</h1>
                             <p class="text-muted">You currently have 
-                               <!--  /*%%SmartyNocache:3841590522705c6784_27417689%%*/<?php echo '<?php'; ?>
+                               <!--  /*%%SmartyNocache:6289590511f309bae5_41012170%%*/<?php echo '<?php'; ?>
  echo '<?php echo '<?php'; ?>
 
                                     ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:3841590522705c6784_27417689%%*/include_once("orders.php");
+/*/%%SmartyNocache:6289590511f309bae5_41012170%%*/include_once("orders.php");
                                     $obj=new orders(); 
                                     $s=$obj->countItems($_SESSION['cno']);
                                     echo $s;
-                                /*%%SmartyNocache:3841590522705c6784_27417689%%*/<?php echo '<?php'; ?>
+                                /*%%SmartyNocache:6289590511f309bae5_41012170%%*/<?php echo '<?php'; ?>
  echo '<?php echo '?>'; ?>
 ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:3841590522705c6784_27417689%%*/ --> 
+/*/%%SmartyNocache:6289590511f309bae5_41012170%%*/ --> 
                                 item(s) in your cart.</p>
                             <div class="table-responsive">
                                 <table class="table">
@@ -415,21 +415,11 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
                                         <tr>
                                             <th> 1</th>
                                             <p hidden> <input type= 'number' id ="tableid" value = 1 > </p>
-                                            <td>Festive grids</td>
-                                            <td><input type='number' value= 0 onclick= "subtotal()" ></td>
-                                            <td>45.00</td>
+                                            <td>Biscuits</td>
+                                            <td><input type='number' value= 2 onclick= "subtotal()" ></td>
+                                            <td>1.50</td>
                                             <td class='subtotal'></td>
-                                            <td><a  onclick = "deleteitem('65')" ><i class='fa fa-trash-o'></i></a></td> 
-                                        </tr>
-                                           
-                                        <tr>
-                                            <th> 2</th>
-                                            <p hidden> <input type= 'number' id ="tableid" value = 2 > </p>
-                                            <td>Confetti</td>
-                                            <td><input type='number' value= 1 onclick= "subtotal()" ></td>
-                                            <td>6.50</td>
-                                            <td class='subtotal'></td>
-                                            <td><a  onclick = "deleteitem('66')" ><i class='fa fa-trash-o'></i></a></td> 
+                                            <td><a  onclick = "deleteitem('63')" ><i class='fa fa-trash-o'></i></a></td> 
                                         </tr>
                                      
                                     </tbody>
@@ -702,8 +692,6 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
 
 
          function addtocart(){
-
-
              var pno = $('#pno').val();
              var qty = $('#qty').val();
 
@@ -780,7 +768,7 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
                 alert("server response: "+obj.message);
             }else{
                 alert("Item has been removed.");
-                window.location=("index.php?cmd=7");
+                window.location=("inder.php?cmd7=");
             }
 
          }

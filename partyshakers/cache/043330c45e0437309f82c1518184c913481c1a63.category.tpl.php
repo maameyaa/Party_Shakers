@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 20:31:19
+/* Smarty version 3.1.30, created on 2017-04-30 01:10:40
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\category.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5904dbf7b34c77_93087908',
+  'unifunc' => 'content_59051d70425322_68041083',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '525e603318d68d8b0ef225005de36eab6ae066e0' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\category.tpl',
-      1 => 1493489363,
+      1 => 1493506833,
       2 => 'file',
     ),
     '424622e207a164a5011b2c22ff94a5bb0cf5df33' => 
@@ -24,13 +24,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
-      1 => 1492817977,
+      1 => 1493506974,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl) {
+function content_59051d70425322_68041083 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
  <!DOCTYPE html>
 <html lang="en">
@@ -131,8 +131,7 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
             </div>
             <div class="col-md-6" data-animate="fadeInDown">
                 <ul class="menu">
-                     
-                     <li ><div><a href="#" data-toggle="modal" data-target="#login-modal">login</a></div>
+                                        <li ><div><a href="#" data-toggle="modal" data-target="#logout-modal">Maame Yaa </a></div>
                       
                     </li>
                     <li><a href="index.php?cmd=2">Register</a>
@@ -476,7 +475,7 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
                                         <a href='index.php?cmd=8&pno=19'>Colored Balloons </a></h3>
                                         <p class='price'> ¢ 0.50</p>
                                         <p class='buttons'>
-                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        <a href='index.php?cmd=8&pno=19' class='btn btn-default'>View detail</a>
                                         
                                         <a data-toggle='modal' data-target='#add-modal' data-pname = 'Colored Balloons' data-price = '0.50' data-pno = '19'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
 
@@ -510,7 +509,7 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
                                         <a href='index.php?cmd=8&pno=20'>Confetti </a></h3>
                                         <p class='price'> ¢ 6.50</p>
                                         <p class='buttons'>
-                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        <a href='index.php?cmd=8&pno=20' class='btn btn-default'>View detail</a>
                                         
                                         <a data-toggle='modal' data-target='#add-modal' data-pname = 'Confetti' data-price = '6.50' data-pno = '20'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
 
@@ -544,7 +543,7 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
                                         <a href='index.php?cmd=8&pno=21'>Festive grids </a></h3>
                                         <p class='price'> ¢ 45.00</p>
                                         <p class='buttons'>
-                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        <a href='index.php?cmd=8&pno=21' class='btn btn-default'>View detail</a>
                                         
                                         <a data-toggle='modal' data-target='#add-modal' data-pname = 'Festive grids' data-price = '45.00' data-pno = '21'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
 
@@ -578,7 +577,7 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
                                         <a href='index.php?cmd=8&pno=22'>Silk Balloons </a></h3>
                                         <p class='price'> ¢ 4.50</p>
                                         <p class='buttons'>
-                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        <a href='index.php?cmd=8&pno=22' class='btn btn-default'>View detail</a>
                                         
                                         <a data-toggle='modal' data-target='#add-modal' data-pname = 'Silk Balloons' data-price = '4.50' data-pno = '22'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
 
@@ -612,7 +611,7 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
                                         <a href='index.php?cmd=8&pno=23'>Shaped Ballons </a></h3>
                                         <p class='price'> ¢ 1.50</p>
                                         <p class='buttons'>
-                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        <a href='index.php?cmd=8&pno=23' class='btn btn-default'>View detail</a>
                                         
                                         <a data-toggle='modal' data-target='#add-modal' data-pname = 'Shaped Ballons' data-price = '1.50' data-pno = '23'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
 
@@ -646,7 +645,7 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
                                         <a href='index.php?cmd=8&pno=24'>Colored confetti </a></h3>
                                         <p class='price'> ¢ 12.50</p>
                                         <p class='buttons'>
-                                        <a href='index.php?cmd=8&pno=' class='btn btn-default'>View detail</a>
+                                        <a href='index.php?cmd=8&pno=24' class='btn btn-default'>View detail</a>
                                         
                                         <a data-toggle='modal' data-target='#add-modal' data-pname = 'Colored confetti' data-price = '12.50' data-pno = '24'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
 
@@ -668,7 +667,8 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
                                    <h4 class="modal-title" id="Login"> <p class="text-center">Confirm</h4>
                                     
                                 </div>
-                                <div class="modal-body">
+
+                                                                <div class="modal-body">
                                     <div >
                                         <input style ="border: none;" name="pno" id ="pno" hidden>
                                  
@@ -679,17 +679,23 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
                                          <div>  Quantity : <input type= 'number'  min="1" max="20"  placeholder='0' id ="qty" > </div>
                                     </div>
 
-                                    <br></br>
+                                   <!--  <br></br> -->
 
                                     <!-- <div id="divStatus"></div> -->
 
 
                                         <p class="text-center">
+
+
+
+                                        
+
                                             <button  onclick = "addtocart()" class="btn btn-primary" href="basket.php" name="addtocart"><i class="fa fa-sign-in"></i>Add to Cart</button>
                                             <button class="btn btn-primary" href="basket.php" name="viewcart"><i class="fa fa-sign-in"></i>View Cart</button>
+                                       
                                         </p>
                                 </div>
-                            </div>
+                                                             </div>
                         </div>
                     </div>
                   
@@ -885,8 +891,12 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
 
 
          function addtocart(){
+
+
              var pno = $('#pno').val();
              var qty = $('#qty').val();
+
+             //alert (qty);
 
 
              var ajaxPageUrl="cartajax.php?cmd=1&pno="+pno+"&qty="+qty;
@@ -925,8 +935,43 @@ function content_5904dbf7b34c77_93087908 (Smarty_Internal_Template $_smarty_tpl)
                      }
          }
 
-         function deleteitem(){
+         function deleteitem($id){
+
+            var id =$id;
+
+            // var tableid = $('#tableid').val();
+
+            // alert(tableid);
+
+
+            ajaxPageUrl="cartajax.php?cmd=2&id="+id;
+
+              $.ajax(ajaxPageUrl, 
+                       {async:true, complete: deleteitemcomplete});
+                        
+            //prompt('url',pageUrl);
+
            
+         }
+
+         function deleteitemcomplete(xhr, status){
+
+          
+            if(status!="success"){
+                alert("status is "+status);
+                return;
+            }
+            
+            var obj = $.parseJSON(xhr.responseText);
+
+            if(obj.result==0){
+
+                alert("server response: "+obj.message);
+            }else{
+                alert("Item has been removed.");
+                window.location=("index.php?cmd=7");
+            }
+
          }
 
        // function subtotal(){

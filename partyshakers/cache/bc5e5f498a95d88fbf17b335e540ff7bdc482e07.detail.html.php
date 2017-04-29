@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-29 23:34:25
+/* Smarty version 3.1.30, created on 2017-04-30 01:32:09
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\detail.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_590506e14ae048_49475714',
+  'unifunc' => 'content_590522793a6055_96006686',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fdde0e5d4a2a458b88cf7cce41812849295d138e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\detail.html',
-      1 => 1493499764,
+      1 => 1493508707,
       2 => 'file',
     ),
     '424622e207a164a5011b2c22ff94a5bb0cf5df33' => 
@@ -24,13 +24,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\footer.tpl',
-      1 => 1493500534,
+      1 => 1493506974,
       2 => 'file',
     ),
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl) {
+function content_590522793a6055_96006686 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
  <!DOCTYPE html>
 <html lang="en">
@@ -374,11 +374,11 @@ function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl)
                     <ul class="breadcrumb">
                         <li><a href="index.html">Home</a>
                         </li>
-                        <li></li>
+                        <li>Decorations</li>
 
 
 
-                        <li></li>
+                        <li>Confetti</li>
                     </ul>
 
                 </div>
@@ -395,16 +395,16 @@ function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="panel-body">
                             <ul class="nav nav-pills nav-stacked category-menu">
                                 <li>
-                                    <a href="category.php?category=Decorations">Decorations</a>
+                                    <a href="index.php?cmd=5&category=Decorations">Decorations</a>
                                 </li>
                                 <li>
-                                    <a href="category.php?category=Costume">Costumes</a>
+                                    <a href="index.php?cmd=5&category=Costume">Costumes</a>
                                 </li>
                                 <li>
-                                    <a href="category.php?category=Food">Food & Drinks</a>
+                                    <a href="index.php?cmd=5&category=Food">Food & Drinks</a>
                                 </li>
                                 <li>
-                                    <a href="category.php?category=Utensils">Tableware</a>
+                                    <a href="index.php?cmd=5&category=Utensils">Tableware</a>
                                 </li>
 
                             </ul>
@@ -426,7 +426,7 @@ function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl)
                         <div class="col-sm-6">
                             <div id="mainImage">
 
-                                <img src= '' alt="" class="img-responsive">
+                                <img src= 'img/Decorations/confetti.jpg' alt="" class="img-responsive">
                             </div>
 
                             <div class="ribbon sale">
@@ -444,17 +444,13 @@ function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
                         <div class="col-sm-6">
                             <div class="box">
-                                <h1 class="text-center"><></h1>
+                                <h1 class="text-center"><Confetti></h1>
                                 <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details</a>
                                 </p>
-                                <p class="price">¢</p>
+                                <p class="price">¢6.50</p>
 
                                 <p class="text-center buttons">
-                                     <a data-toggle='modal' data-target='#add-modal' data-pname = '' data-price = '' data-pno = '<br />
-<b>Notice</b>:  Undefined index: itempno in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>123</b><br />
-<br />
-<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>123</b><br />
-'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
+                                     <a data-toggle='modal' data-target='#add-modal' data-pname = 'Confetti' data-price = '6.50' data-pno = '20'class='btn btn-primary'><i class='fa fa-shopping-cart' ></i>Add to cart</a>
                                 
 
                                  <a href="basket.html" class="btn btn-default"><i class="fa fa-heart"></i> Add to wishlist</a>
@@ -472,7 +468,7 @@ function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl)
                                    <h4 class="modal-title" id="Login"> <p class="text-center">Confirm</h4>
                                     
                                 </div>
-                                <div class="modal-body">
+                                                                <div class="modal-body">
                                     <div >
                                         <input style ="border: none;" name="pno" id ="pno" hidden>
                                  
@@ -490,10 +486,11 @@ function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl)
 
                                         <p class="text-center">
                                             <button  onclick = "addtocart()" class="btn btn-primary" href="basket.php" name="addtocart"><i class="fa fa-sign-in"></i>Add to Cart</button>
-                                            <button class="btn btn-primary" href="basket.php" name="viewcart"><i class="fa fa-sign-in"></i>View Cart</button>
-                                        </p>
+
+                                            <a class="btn btn-primary" name="viewcart" href="index.php?cmd=7"><i class="fa fa-sign-in"></i>View Cart</a>
+                                        </p>  
                                 </div>
-                            </div>
+                                                            </div>
                         </div>
                     </div>
 
@@ -503,11 +500,7 @@ function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl)
                     <div class="box" id="details">
                         <p>
                             <h4>Product details</h4>
-                            <p><br />
-<b>Notice</b>:  Undefined index: itemdescription in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>173</b><br />
-<br />
-<b>Notice</b>:  Trying to get property of non-object in <b>C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates_c\fdde0e5d4a2a458b88cf7cce41812849295d138e_0.file.detail.html.cache.php</b> on line <b>173</b><br />
-</p>
+                            <p>Various sizes of confetti are available.</p>
 
                             <hr>
                             <div class="social">
@@ -711,10 +704,12 @@ function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl)
 
 
          function addtocart(){
+
+
              var pno = $('#pno').val();
              var qty = $('#qty').val();
 
-             alert (qty);
+             //alert (qty);
 
 
              var ajaxPageUrl="cartajax.php?cmd=1&pno="+pno+"&qty="+qty;
@@ -755,11 +750,40 @@ function content_590506e14ae048_49475714 (Smarty_Internal_Template $_smarty_tpl)
 
          function deleteitem($id){
 
+            var id =$id;
+
+            // var tableid = $('#tableid').val();
+
+            // alert(tableid);
+
+
+            ajaxPageUrl="cartajax.php?cmd=2&id="+id;
+
+              $.ajax(ajaxPageUrl, 
+                       {async:true, complete: deleteitemcomplete});
+                        
+            //prompt('url',pageUrl);
 
            
          }
 
-         function deleteitemcomplete(){
+         function deleteitemcomplete(xhr, status){
+
+          
+            if(status!="success"){
+                alert("status is "+status);
+                return;
+            }
+            
+            var obj = $.parseJSON(xhr.responseText);
+
+            if(obj.result==0){
+
+                alert("server response: "+obj.message);
+            }else{
+                alert("Item has been removed.");
+                window.location=("index.php?cmd=7");
+            }
 
          }
 

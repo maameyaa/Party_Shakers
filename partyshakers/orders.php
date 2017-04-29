@@ -79,6 +79,13 @@ class orders extends adb{
 	}
 
 
+	function deleteitem($id){
+		$strQuery="delete from cart where id='$id'";
+        return $this->query($strQuery);
+
+	}
+
+
 	function getparts($ono){
 		$strQuery = "Select * from parts, odetails WHERE odetails.ono = $ono AND parts.pno=odetails.pno";
 		return $this->query($strQuery);	
