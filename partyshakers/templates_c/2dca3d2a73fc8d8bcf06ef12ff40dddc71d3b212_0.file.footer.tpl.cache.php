@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-30 01:32:09
+/* Smarty version 3.1.30, created on 2017-04-30 01:42:18
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\footer.tpl" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_5905227925eb64_60840810',
+  'unifunc' => 'content_590524da68de01_96183618',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5905227925eb64_60840810 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '292345905227921c832_31322383';
+function content_590524da68de01_96183618 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '30148590524da6474f9_53544856';
 ?>
         <!-- *** FOOTER ***
  _________________________________________________________ -->

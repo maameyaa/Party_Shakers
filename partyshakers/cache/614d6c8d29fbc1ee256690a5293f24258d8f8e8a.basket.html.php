@@ -1,24 +1,24 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-30 01:32:00
+/* Smarty version 3.1.30, created on 2017-04-30 01:42:18
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\basket.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59052270d2db23_58471037',
+  'unifunc' => 'content_590524da8096b7_58271281',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '34631b9ecd1847b12db2f68e46a20809aff24e81' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\basket.html',
-      1 => 1493503143,
+      1 => 1493509334,
       2 => 'file',
     ),
     '424622e207a164a5011b2c22ff94a5bb0cf5df33' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\header.tpl',
-      1 => 1492795253,
+      1 => 1493509202,
       2 => 'file',
     ),
     '2dca3d2a73fc8d8bcf06ef12ff40dddc71d3b212' => 
@@ -30,7 +30,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 120,
 ),true)) {
-function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl) {
+function content_590524da8096b7_58271281 (Smarty_Internal_Template $_smarty_tpl) {
 ?>
   <!DOCTYPE html>
 <html lang="en">
@@ -383,20 +383,7 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
 
                     <div class="box">
                             <h1>Shopping cart</h1>
-                            <p class="text-muted">You currently have 
-                               <!--  /*%%SmartyNocache:3841590522705c6784_27417689%%*/<?php echo '<?php'; ?>
- echo '<?php echo '<?php'; ?>
-
-                                    ';<?php echo '?>'; ?>
-/*/%%SmartyNocache:3841590522705c6784_27417689%%*/include_once("orders.php");
-                                    $obj=new orders(); 
-                                    $s=$obj->countItems($_SESSION['cno']);
-                                    echo $s;
-                                /*%%SmartyNocache:3841590522705c6784_27417689%%*/<?php echo '<?php'; ?>
- echo '<?php echo '?>'; ?>
-';<?php echo '?>'; ?>
-/*/%%SmartyNocache:3841590522705c6784_27417689%%*/ --> 
-                                item(s) in your cart.</p>
+                           
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -442,6 +429,7 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
                                 </table>
 
                             </div>
+                         <p class="text-muted">You currently have 2 item(s) in your cart.</p>
                             <!-- /.table-responsive -->
 
                             <div class="box-footer">
@@ -493,6 +481,7 @@ function content_59052270d2db23_58471037 (Smarty_Internal_Template $_smarty_tpl)
                         </div>
 
                     </div>
+
 
 
                     <div class="box">

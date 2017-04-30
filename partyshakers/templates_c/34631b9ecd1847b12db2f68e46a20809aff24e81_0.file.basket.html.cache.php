@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.30, created on 2017-04-30 01:32:00
+/* Smarty version 3.1.30, created on 2017-04-30 01:42:18
   from "C:\xampp\htdocs\ecommerce\PartyShakers\Version4\partyshakers\templates\basket.html" */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.30',
-  'unifunc' => 'content_59052270783860_95488267',
+  'unifunc' => 'content_590524da294f97_03041564',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '34631b9ecd1847b12db2f68e46a20809aff24e81' => 
     array (
       0 => 'C:\\xampp\\htdocs\\ecommerce\\PartyShakers\\Version4\\partyshakers\\templates\\basket.html',
-      1 => 1493503143,
+      1 => 1493509334,
       2 => 'file',
     ),
   ),
@@ -22,8 +22,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:footer.tpl' => 1,
   ),
 ),false)) {
-function content_59052270783860_95488267 (Smarty_Internal_Template $_smarty_tpl) {
-$_smarty_tpl->compiled->nocache_hash = '3841590522705c6784_27417689';
+function content_590524da294f97_03041564 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->compiled->nocache_hash = '86590524da103e75_57539980';
 ?>
   <?php $_smarty_tpl->_subTemplateRender("file:header.tpl", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 9999, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
@@ -46,16 +46,7 @@ $_smarty_tpl->compiled->nocache_hash = '3841590522705c6784_27417689';
 
                     <div class="box">
                             <h1>Shopping cart</h1>
-                            <p class="text-muted">You currently have 
-                               <!--  <?php echo '/*%%SmartyNocache:3841590522705c6784_27417689%%*/<?php echo \'<?php
-                                    \';?>/*/%%SmartyNocache:3841590522705c6784_27417689%%*/';?>
-include_once("orders.php");
-                                    $obj=new orders(); 
-                                    $s=$obj->countItems($_SESSION['cno']);
-                                    echo $s;
-                                <?php echo '/*%%SmartyNocache:3841590522705c6784_27417689%%*/<?php echo \'?>\';?>/*/%%SmartyNocache:3841590522705c6784_27417689%%*/';?>
- --> 
-                                item(s) in your cart.</p>
+                           
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
@@ -107,6 +98,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
                                 </table>
 
                             </div>
+                         <p class="text-muted">You currently have <?php echo $_smarty_tpl->tpl_vars['itemsincart']->value;?>
+ item(s) in your cart.</p>
                             <!-- /.table-responsive -->
 
                             <div class="box-footer">
@@ -158,6 +151,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl);
                         </div>
 
                     </div>
+
 
 
                     <div class="box">
